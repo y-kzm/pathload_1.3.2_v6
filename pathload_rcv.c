@@ -97,7 +97,7 @@ int main(l_int32 argc, char *argv[])
     {
       case '6':
         v6mode = 1;
-        //printf("Enable IPv6 mode\n");
+        printf("Enable IPv6 mode\n");
         break ;
       case 't':
         requested_delay = atoi(optarg);
@@ -283,6 +283,10 @@ int main(l_int32 argc, char *argv[])
       continue;
     }
     fprintf(stderr, "Trying %s port %s ...\n", hbuf, sbuf);
+    if (rcv_udp_addr.ss_family == AF_INET && res->ai_family == AF_INET6) {
+      fprintf(stderr, "Address family missmatch\n");
+      continue;
+    }
 
     sock_tcp = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
     if (sock_tcp < 0)
