@@ -92,9 +92,13 @@ int main(l_int32 argc, char *argv[])
 
   // TODO: -B: bind to the interface associated with the address <host>
   if ( argc == 1 ) errflg++ ;
-  while ((c = getopt(argc, argv, "t:s:h6w:vHqo:O:N:V")) != EOF)
+  while ((c = getopt(argc, argv, "6t:s:hw:vHqo:O:N:V")) != EOF)
     switch (c) 
     {
+      case '6':
+        v6mode = 1;
+        //printf("Enable IPv6 mode\n");
+        break ;
       case 't':
         requested_delay = atoi(optarg);
         break;
@@ -131,9 +135,6 @@ int main(l_int32 argc, char *argv[])
         break;
       case 'V':
         VVerbose = 1;
-        break ;
-      case '6':
-        v6mode = 1;
         break ;
       case '?':
         errflg++;
@@ -175,7 +176,7 @@ int main(l_int32 argc, char *argv[])
   hints.ai_socktype = SOCK_DGRAM;
   hints.ai_flags = AI_PASSIVE;
   // TODO: Do not hard-coding 
-  if (v6mode) hints.ai_family = AF_UNSPEC;
+  if (v6mode) hints.ai_family = AF_INET6;
   else hints.ai_family = AF_INET;
 
   error = getaddrinfo(NULL, sbuf, &hints, &res0);
@@ -193,6 +194,7 @@ int main(l_int32 argc, char *argv[])
     exit(-1);
   }
   fprintf(stderr, "Listen to %s port %s\n", hbuf, sbuf);
+
   sock_udp = socket(res0->ai_family, res0->ai_socktype, res0->ai_protocol);
   if (sock_udp < 0)
   {
