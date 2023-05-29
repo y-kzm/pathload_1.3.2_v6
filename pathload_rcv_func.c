@@ -39,7 +39,7 @@ l_int32 recvfrom_latency(struct sockaddr_storage rcv_udp_addr, socklen_t rcv_udp
   float min_OSdelta[50], ord_min_OSdelta[50];
   l_int32 j ;
   struct timeval current_time, first_time ;
-
+  
   if ( (random_data = malloc(max_pkt_sz*sizeof(char)) ) == NULL )
   {
     printf("ERROR : unable to malloc %ld bytes \n",max_pkt_sz);
@@ -55,6 +55,8 @@ l_int32 recvfrom_latency(struct sockaddr_storage rcv_udp_addr, socklen_t rcv_udp
          (struct sockaddr*)&rcv_udp_addr, rcv_udp_addr_len) == -1)
         perror("recvfrom_latency");
     gettimeofday(&first_time, NULL);
+    //while((errno = recvfrom(sock_udp, random_data, max_pkt_sz, 0, NULL, NULL)) < 0 && errno == EINTR)
+    //  ;
     recvfrom(sock_udp, random_data, max_pkt_sz, 0, NULL, NULL);
     gettimeofday(&current_time, NULL);
     min_OSdelta[j]= time_to_us_delta(first_time, current_time);
@@ -252,10 +254,6 @@ l_int32 recv_train( l_int32 exp_train_id, struct timeval *time,l_int32 train_len
             }
             else
               bad_train = 1;
-          }
-          else
-          {
-            perror("recvfrom");
           }
 #ifndef THRLIB
         } // end of FD_ISSET
