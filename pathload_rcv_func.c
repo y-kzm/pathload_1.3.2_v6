@@ -313,7 +313,7 @@ l_int32 check_intr_coalescence(struct timeval time[],l_int32 len, l_int32 *burst
     }
   }
 
-  //fprintf(stderr,"\tNumber of b2b %d, Number of burst %d\n",b2b,*burst);
+  fprintf(stderr,"\tNumber of b2b %d, Number of burst %d\n",b2b,*burst);
   if ( b2b > .6*len )
   {
    return 1;
