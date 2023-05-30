@@ -39,7 +39,7 @@ l_int32 recvfrom_latency(struct sockaddr_storage rcv_udp_addr, socklen_t rcv_udp
   float min_OSdelta[50], ord_min_OSdelta[50];
   l_int32 j ;
   struct timeval current_time, first_time ;
-  
+
   if ( (random_data = malloc(max_pkt_sz*sizeof(char)) ) == NULL )
   {
     printf("ERROR : unable to malloc %ld bytes \n",max_pkt_sz);
@@ -50,13 +50,10 @@ l_int32 recvfrom_latency(struct sockaddr_storage rcv_udp_addr, socklen_t rcv_udp
 
   for (j=0; j<50; j++)
   {
-    // What's the mean of sending UDP packets to myself?
     if ( sendto(sock_udp, random_data, max_pkt_sz, 0, 
          (struct sockaddr*)&rcv_udp_addr, rcv_udp_addr_len) == -1)
         perror("recvfrom_latency");
     gettimeofday(&first_time, NULL);
-    //while((errno = recvfrom(sock_udp, random_data, max_pkt_sz, 0, NULL, NULL)) < 0 && errno == EINTR)
-    //  ;
     recvfrom(sock_udp, random_data, max_pkt_sz, 0, NULL, NULL);
     gettimeofday(&current_time, NULL);
     min_OSdelta[j]= time_to_us_delta(first_time, current_time);
@@ -66,6 +63,7 @@ l_int32 recvfrom_latency(struct sockaddr_storage rcv_udp_addr, socklen_t rcv_udp
   free(random_data);
   return((l_int32)ord_min_OSdelta[25]);   
 }
+
 
 double get_adr() 
 {
@@ -92,6 +90,7 @@ double get_adr()
   fflush(stdout);
   fprintf(pathload_fp,"  ADR [");
   fflush(pathload_fp);
+  send_ctr_mesg(ctr_buff, cmd_train_len);
   ctr_code = SEND_TRAIN | CTR_CODE ;
   send_ctr_mesg(ctr_buff, ctr_code);
   exp_train_id = 0 ;
@@ -105,7 +104,8 @@ double get_adr()
     if ( train_len == 5)
       train_len = 3;
     else 
-      train_len = TRAIN_LEN - exp_train_id*15;
+      train_len = (TRAIN_LEN - exp_train_id*15) * cmd_train_len / TRAIN_LEN;
+    overhead += train_len * max_pkt_sz;
     if (Verbose)
       printf(".");
     fflush(stdout);
@@ -187,7 +187,6 @@ l_int32 recv_train( l_int32 exp_train_id, struct timeval *time,l_int32 train_len
   l_int32 rcvd=0;
   char *pack_buf ;
   char ctr_buff[8];
-  ssize_t rcv_sz;
 #ifdef THRLIB
   thr_arg arg ;
   pthread_t tid;
@@ -195,21 +194,19 @@ l_int32 recv_train( l_int32 exp_train_id, struct timeval *time,l_int32 train_len
 #endif 
   exp_pack_id=0;
 
-  if ( ( pack_buf = malloc(max_pkt_sz * sizeof(char))) == NULL ) 
+  if ( ( pack_buf = malloc(max_pkt_sz*sizeof(char))) == NULL ) 
   {
     printf("ERROR : unable to malloc %ld bytes \n",max_pkt_sz);
     exit(-1);
   }
-  
-  
+      
   sigstruct.sa_handler = sig_sigusr1 ;
   sigemptyset(&sigstruct.sa_mask);
-  sigstruct.sa_flags =  0;  
+  sigstruct.sa_flags = 0 ;
   #ifdef SA_INTERRUPT
     sigstruct.sa_flags |= SA_INTERRUPT ;
   #endif
-  sigaction(SIGUSR1 , &sigstruct, NULL );
-
+  sigaction(SIGUSR1 , &sigstruct,NULL );
 
 #ifdef THRLIB
   arg.finished_stream=0;
@@ -222,49 +219,46 @@ l_int32 recv_train( l_int32 exp_train_id, struct timeval *time,l_int32 train_len
     fprintf(stdout,"Failed to create thread. exiting...\n");
     fprintf(pathload_fp,"Failed to create thread. exiting...\n");
     exit(-1);
-  } 
+  }
 #endif
-  
+
   do 
   {
 #ifndef THRLIB
       FD_ZERO(&readset);
       FD_SET(sock_tcp,&readset);
       FD_SET(sock_udp,&readset);
-      select_tv.tv_sec=1000;
-      select_tv.tv_usec=0;
-      if (select(sock_tcp + 1, &readset, NULL, NULL, &select_tv) > 0)
+      select_tv.tv_sec=1000;select_tv.tv_usec=0;
+      if (select(sock_tcp+1,&readset,NULL,NULL,&select_tv) > 0 ) 
       {
-        if (FD_ISSET(sock_udp, &readset))
+        if (FD_ISSET(sock_udp,&readset) )
         {
 #endif
-          rcv_sz = recvfrom(sock_udp, pack_buf, max_pkt_sz, 0, NULL, NULL);
-          if (rcv_sz != -1)
-          {
-            gettimeofday(&current_time, NULL);
-            memcpy(&train_id, pack_buf, sizeof(l_int32));
-            train_id = ntohl(train_id);
-            memcpy(&pack_id, pack_buf + sizeof(l_int32), sizeof(l_int32));
-            pack_id = ntohl(pack_id);
-            if (train_id == exp_train_id && pack_id == exp_pack_id)
-            {
-              rcvd++;
-              time[pack_id] = current_time;
-              exp_pack_id++;
-            }
-            else
-              bad_train = 1;
-          }
+    if (recvfrom(sock_udp, pack_buf, max_pkt_sz, 0, NULL, NULL) != -1)
+    {
+      gettimeofday(&current_time, NULL);
+      memcpy(&train_id, pack_buf, sizeof(l_int32));
+      train_id = ntohl(train_id) ;
+      memcpy(&pack_id, pack_buf+sizeof(l_int32), sizeof(l_int32));
+      pack_id=ntohl(pack_id);
+      if (train_id == exp_train_id && pack_id==exp_pack_id ) 
+      {
+        rcvd++;
+        time[pack_id] = current_time ;
+        exp_pack_id++;
+      }
+      else bad_train=1;
+    }
 #ifndef THRLIB
         } // end of FD_ISSET
 
-        if (FD_ISSET(sock_tcp, &readset))
+        if ( FD_ISSET(sock_tcp,&readset) )
         {
           /* check the control connection.*/
-          if ((ret_val = recv_ctr_mesg(sock_tcp, ctr_buff)) != -1)
+          if (( ret_val = recv_ctr_mesg(sock_tcp,ctr_buff)) != -1 )
           {
-            if ((((ret_val & CTR_CODE) >> 31) == 1) &&
-                ((ret_val & 0x7fffffff) == FINISHED_TRAIN))
+            if ( (((ret_val & CTR_CODE) >> 31) == 1) && 
+                  ((ret_val & 0x7fffffff) == FINISHED_TRAIN ) )
             {
               break;
             }
@@ -280,7 +274,7 @@ l_int32 recv_train( l_int32 exp_train_id, struct timeval *time,l_int32 train_len
   gettimeofday(&time[pack_id+1], NULL);
   sigstruct.sa_handler = SIG_DFL ;
   sigemptyset(&sigstruct.sa_mask);
-  sigstruct.sa_flags = 0 ;  
+  sigstruct.sa_flags = 0 ;
   sigaction(SIGUSR1 , &sigstruct,NULL );
   free(pack_buf);
   return bad_train ; 
@@ -313,7 +307,7 @@ l_int32 check_intr_coalescence(struct timeval time[],l_int32 len, l_int32 *burst
     }
   }
 
-  fprintf(stderr,"\tNumber of b2b %d, Number of burst %d\n",b2b,*burst);
+  //fprintf(stderr,"\tNumber of b2b %d, Number of burst %d\n",b2b,*burst);
   if ( b2b > .6*len )
   {
    return 1;
@@ -394,7 +388,7 @@ K=%ldpackets, T=%ldusec\n",tr, cur_pkt_sz , stream_len,time_interval);
 
   sigstruct.sa_handler = sig_sigusr1 ;
   sigemptyset(&sigstruct.sa_mask);
-  sigstruct.sa_flags = 0 ;   
+  sigstruct.sa_flags = 0 ;
   #ifdef SA_INTERRUPT
     sigstruct.sa_flags |= SA_INTERRUPT ;
   #endif
@@ -592,7 +586,7 @@ K=%ldpackets, T=%ldusec\n",tr, cur_pkt_sz , stream_len,time_interval);
         else
         {
           len=eliminate_rcvr_side_CS(arrv_tm,owd,owdfortd,low,high,&num_rcvr_cs[stream_cnt-1],&tmp_b2b);
-          if ( len > MIN_STREAM_LEN )
+          if ( ( len > MIN_STREAM_LEN ) || ( len >= (stream_len - 1)) )
           {
             get_trend(owdfortd,len);
           }
@@ -645,7 +639,7 @@ void print_contextswitch_info(l_int32 num_sndr_cs[], l_int32 num_rcvr_cs[],l_int
       printf("  # of CS @ sndr        :: ");
     fprintf(pathload_fp,"  # of CS @ sndr        :: ");
     
-    for(j=0;j<stream_cnt-1;j++)
+    for(j=0;j<stream_cnt;j++)
     {
       if (Verbose) printf(":%2d",num_sndr_cs[j]);
       fprintf(pathload_fp,":%2d",num_sndr_cs[j]);
@@ -655,7 +649,7 @@ void print_contextswitch_info(l_int32 num_sndr_cs[], l_int32 num_rcvr_cs[],l_int
     if (Verbose)
       printf("  # of CS @ rcvr        :: ");
     fprintf(pathload_fp,"  # of CS @ rcvr        :: ");
-    for(j=0;j<stream_cnt-1;j++)
+    for(j=0;j<stream_cnt;j++)
     {
       if (Verbose) printf(":%2d",num_rcvr_cs[j]);
       fprintf(pathload_fp,":%2d",num_rcvr_cs[j]);
@@ -666,7 +660,7 @@ void print_contextswitch_info(l_int32 num_sndr_cs[], l_int32 num_rcvr_cs[],l_int
     if (Verbose)
       printf("  # of DS @ rcvr        :: ");
     fprintf(pathload_fp,"  # of DS @ rcvr        :: ");
-    for(j=0;j<stream_cnt-1;j++)
+    for(j=0;j<stream_cnt;j++)
     {
       if (Verbose) printf(":%2d",discard[j]);
       fprintf(pathload_fp,":%2d",discard[j]);
@@ -677,8 +671,6 @@ void print_contextswitch_info(l_int32 num_sndr_cs[], l_int32 num_rcvr_cs[],l_int
 
 void sig_sigusr1()
 {
-  /* For debug */
-  //printf("Signal Received\n");
   return;
 }
 
@@ -714,7 +706,7 @@ void *ctrl_listen(void *arg)
           if ( ret_val == ((thr_arg *)arg)->stream_cnt )
           {
             ((thr_arg *)arg)->finished_stream =1 ;
-            pthread_kill(((thr_arg *)arg)->ptid,SIGUSR1);     
+            pthread_kill(((thr_arg *)arg)->ptid,SIGUSR1);
             pthread_exit(NULL);
           }
         }
@@ -725,7 +717,7 @@ void *ctrl_listen(void *arg)
           select_tv.tv_sec = 0 ;
           select(1,NULL,NULL,NULL,&select_tv);
           ((thr_arg *)arg)->finished_stream =1 ;
-          pthread_kill(((thr_arg *)arg)->ptid,SIGUSR1); 
+          pthread_kill(((thr_arg *)arg)->ptid,SIGUSR1);
           pthread_exit(NULL);
         }
       }
@@ -848,9 +840,8 @@ l_int32 recv_ctr_mesg(l_int32 ctr_strm, char *ctr_buff)
 {
   l_int32 ctr_code;
   gettimeofday(&first_time,0);
-  if (read(ctr_strm, ctr_buff, sizeof(l_int32)) != sizeof(l_int32)) {
+  if (read(ctr_strm, ctr_buff, sizeof(l_int32)) != sizeof(l_int32))
     return(-1);
-  }
   gettimeofday(&second_time,0);
   memcpy(&ctr_code, ctr_buff, sizeof(l_int32));
   return(ntohl(ctr_code));
@@ -1653,10 +1644,14 @@ void terminate_gracefully(struct timeval exp_start_time)
       printf("Avail-bw > maximum sending rate.\n");
       if ( tr_min)
         printf("Avail-bw > %.2f (Mbps)\n", tr_min);
+      printf("Measurements finished at %s \n",  buff);
+      printf("Measurement latency is %.2f sec \n", time_to_us_delta(exp_start_time, exp_end_time) / 1000000);
     }
     fprintf(pathload_fp,"Avail-bw > maximum sending rate.\n");
     if ( tr_min)
       fprintf(pathload_fp,"Avail-bw > %.2f (Mbps)\n", tr_min);
+    fprintf(pathload_fp,"Measurements finished at %s \n",  buff);
+    fprintf(pathload_fp,"Measurement latency is %.2f sec \n", time_to_us_delta(exp_start_time, exp_end_time) / 1000000);
   }
   else if (bad_fleet_cs && !interrupt_coalescence)
   {
@@ -1714,6 +1709,34 @@ void terminate_gracefully(struct timeval exp_start_time)
       fprintf(pathload_fp,"Exiting due to grey bw resolution\n");
       min = grey_min ; max = grey_max;
     }
+    else if ( !interrupt_coalescence && (cmd_max_fleets != 0) && (exp_fleet_id > cmd_max_fleets) )
+    {
+      if (Verbose)
+        printf("Exiting due to maximum number of fleets\n");
+      fprintf(pathload_fp,"Exiting due to maximum number of fleets\n");
+      if ( grey_min && grey_max)
+      {
+        min = grey_min ; max = grey_max ;
+      }
+      else
+      {
+        min = tr_min ; max = tr_max ;
+      }
+    }
+    else if ( !interrupt_coalescence && (cmd_max_overhead != 0) && (overhead > cmd_max_overhead) )
+    {
+      if (Verbose)
+        printf("Exiting due to maximum overhead\n");
+      fprintf(pathload_fp,"Exiting due to maximum overhead\n");
+      if ( grey_min && grey_max)
+      {
+        min = grey_min ; max = grey_max ;
+      }
+      else
+      {
+        min = tr_min ; max = tr_max ;
+      }
+    }
     else
     {
       min = tr_min ; max = tr_max;
@@ -1744,6 +1767,11 @@ void terminate_gracefully(struct timeval exp_start_time)
     fprintf(pathload_fp,"Measurements finished at %s \n",  buff);
     fprintf(pathload_fp,"Measurement latency is %.2f sec \n", time_to_us_delta(exp_start_time, exp_end_time) / 1000000);
   }
+  if (verbose || Verbose)
+  {
+    printf("Overhead : %d bytes (%d KB)\n", overhead, overhead / 1024);
+  }
+  fprintf(pathload_fp,"Overhead : %d bytes (%d KB)\n", overhead, overhead / 1024);
 
   if (netlog)
     fclose(netlog_fp);
@@ -1779,7 +1807,6 @@ void netlogger()
     else fprintf(netlog_fp," HOST=NO_NAME");
     fprintf(netlog_fp," PROG=pathload");
     fprintf(netlog_fp," LVL=Usage");
-    // TODO: Use getnameinfo()
     if ((snd_host = gethostbyname(hostname)) == 0) {
         snd_host = gethostbyaddr(hostname,256,AF_INET);
     }

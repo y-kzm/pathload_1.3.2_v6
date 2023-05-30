@@ -66,7 +66,7 @@ int send_fleet()
   for (i=0; i<cur_pkt_sz-1; i++) pkt_buf[i]=(char)(random()&0x000000ff);
   pkt_id = 0 ;
   if ( !quiet)
-    printf("Sending fleet %ld ",fleet_id);
+    printf("Sending fleet %ld [%d*%d*%d] <%ld> ",fleet_id,num_stream,stream_len,cur_pkt_sz, time_interval);
   while ( stream_cnt < num_stream )
   {
     if ( !quiet) printf("#");
@@ -92,6 +92,8 @@ int send_fleet()
       if ( pkt_cnt < ( stream_len - 1 ) )
       {
         l_int32 tm_remaining = time_interval - tmp;
+	/* This is not working as intended, disable - Jean II */
+        /*
         if ( tm_remaining > min_sleep_interval )
         {
           sleep_tm_usec = tm_remaining - (tm_remaining%min_timer_intr) 
@@ -100,6 +102,7 @@ int send_fleet()
           sleep_time.tv_usec = sleep_tm_usec - sleep_time.tv_sec*1000000 ;
           select(1,NULL,NULL,NULL,&sleep_time);
         }
+        */
         gettimeofday(&tmp2,NULL) ;
         t2 = (double) tmp2.tv_sec * 1000000.0 +(double)tmp2.tv_usec ;
         diff = gettimeofday_latency>0?gettimeofday_latency-1:0;
@@ -121,7 +124,7 @@ int send_fleet()
     {
       gettimeofday(&tmp2, NULL) ;
       t2 = (double) tmp2.tv_sec * 1000000.0 +(double)tmp2.tv_usec ;
-    }while((t2 - t1) < 8000 ) ;
+    }while((t2 - t1) < 2000 ) ;
     ctr_code = FINISHED_STREAM | CTR_CODE ;
     if ( send_ctr_mesg(ctr_buff, ctr_code ) == -1 ) 
     {
@@ -156,6 +159,8 @@ int send_fleet()
     {
       /* release cpu if inter-stream gap is longer than min_sleep_time
       */
+      /* This is not working as intended, disable - Jean II */
+      /*
       if ( t2 - t1 - stream_duration * 9 > min_sleep_interval )
       {
         sleep_tm_usec = time_interval - tmp - 
@@ -166,6 +171,7 @@ int send_fleet()
         gettimeofday(&tmp2,NULL) ;
         t2 = (double) tmp2.tv_sec * 1000000.0 +(double)tmp2.tv_usec ;
       }
+      */
       /* busy wait for the remaining time */
       do
       {
@@ -278,97 +284,58 @@ l_int32 send_latency()
   int i, len ;
   int sock_udp ;
   struct timeval first_time ,current_time;
-  /* Additional var for IPv6 suppport */
-  //struct sockaddr_storage snd_udp_addr, rcv_udp_addr ;
-  struct addrinfo hints, *res, *res0;
-  char hbuf[NI_MAXHOST], sbuf[NI_MAXSERV];
-  int error;
-  int sock_num = 0;
-  int on;
+  struct sockaddr_in snd_udp_addr, rcv_udp_addr ;
 
   if ( max_pkt_sz == 0 ||  (pack_buf = malloc(max_pkt_sz*sizeof(char)) ) == NULL )
   {
     printf("ERROR : send_latency : unable to malloc %ld bytes \n",max_pkt_sz);
     exit(-1);
   }
-  
-  /* Address-family independent */
-  snprintf(sbuf, sizeof(sbuf), "%u", 0);
-  memset(&hints, 0, sizeof(hints));
-  hints.ai_socktype = SOCK_DGRAM;
-  error = getaddrinfo(NULL, sbuf, &hints, &res0);
-  if (error)
+  if ((sock_udp=socket(AF_INET, SOCK_DGRAM, 0)) < 0)
   {
-    fprintf(stderr, "%s %s: %s\n", hbuf, sbuf, gai_strerror(error));
-    exit(EXIT_FAILURE);
+     perror("socket(AF_INET,SOCK_DGRAM,0):");
+     exit(-1);
   }
-  for (res = res0; res; res = res->ai_next)
+  bzero((char*)&snd_udp_addr, sizeof(snd_udp_addr));
+  snd_udp_addr.sin_family = AF_INET;
+  snd_udp_addr.sin_addr.s_addr = htonl(INADDR_LOOPBACK);
+  snd_udp_addr.sin_port  = 0 ;
+  if (bind(sock_udp, (struct sockaddr*)&snd_udp_addr, sizeof(snd_udp_addr)) < 0)
   {
-    error = getnameinfo(res->ai_addr, res->ai_addrlen,
-                        hbuf, sizeof(hbuf), sbuf, sizeof(sbuf),
-                        NI_NUMERICHOST | NI_NUMERICSERV);
-    if (error)
-    {
-      fprintf(stderr, "%s: %s\n", sbuf, gai_strerror(error));
-      continue;
-    }
-
-    sock_udp = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
-    if (sock_udp < 0)
-    {
-      continue;
-    }
-    if (res->ai_family == AF_INET6 &&
-        setsockopt(sock_udp, IPPROTO_IPV6, IPV6_V6ONLY, &on, sizeof(on)) < 0)
-    {
-      perror("setsockopt");
-      continue;
-    }
-    sock_num++;
-  }
-  if (sock_num == 0)
-  {
-    printf(stderr, "./server: no socket to listen to\n");
-    exit(EXIT_FAILURE);
-  }
-
-  if (bind(sock_udp, (struct sockaddr *)&snd_udp_addr, sizeof(snd_udp_addr)) < 0)
-  {
-    perror("bind(sock_udp):");
-    exit(-1);
+     perror("bind(sock_udp):");
+     close(sock_udp);
+     exit(-1);
   }
 
   len = sizeof(rcv_udp_addr);
-  if (getsockname(sock_udp, (struct sockaddr *)&rcv_udp_addr, &len) < 0)
-  {
+  if (getsockname(sock_udp, (struct sockaddr *)&rcv_udp_addr, &len ) < 0 )
+  { 
     perror("getsockname");
+    close(sock_udp);
     exit(-1);
   }
-
-  if (connect(sock_udp, (struct sockaddr *)&rcv_udp_addr, sizeof(rcv_udp_addr)) < 0)
+  
+  if(connect(sock_udp,(struct sockaddr *)&rcv_udp_addr, sizeof(rcv_udp_addr)) < 0 )
   {
-    perror("connect(sock_udp)");
-    exit(-1);
+     perror("connect(sock_udp)");
+     close(sock_udp);
+     exit(-1);
   }
-
   srandom(getpid()); /* Create random payload; does it matter? */
-  for (i = 0; i < max_pkt_sz - 1; i++)
-    pack_buf[i] = (char)(random() & 0x000000ff);
-  for (i = 0; i < 50; i++)
+  for (i=0; i<max_pkt_sz-1; i++) pack_buf[i]=(char)(random()&0x000000ff);
+  for (i=0; i<50; i++) 
   {
     gettimeofday(&first_time, NULL);
-    if (send(sock_udp, pack_buf, max_pkt_sz, 0) == -1)
-      perror("sendto");
+    if ( send(sock_udp, pack_buf, max_pkt_sz, 0) == -1 ) perror("sendto");
     gettimeofday(&current_time, NULL);
-    recv(sock_udp, pack_buf, max_pkt_sz, 0);
+    recv(sock_udp, pack_buf, max_pkt_sz, 0); 
     min_OSdelta[i] = time_to_us_delta(first_time, current_time);
   }
   /* Use median  of measured latencies to avoid outliers */
-  order_float(min_OSdelta, ord_min_OSdelta, 0, 50);
-  if (pack_buf != NULL)
-    free(pack_buf);
-
-  return (ord_min_OSdelta[25]);
+  order_float(min_OSdelta, ord_min_OSdelta,0, 50);
+  if ( pack_buf != NULL ) free(pack_buf);
+  close(sock_udp);
+  return (ord_min_OSdelta[25]); 
 }
 
 int send_train() 
@@ -397,7 +364,7 @@ int send_train()
     if ( train_len == 5)
       train_len = 3;
     else 
-      train_len = TRAIN_LEN - train_id*15;
+      train_len = (TRAIN_LEN - train_id*15) * cmd_train_len / TRAIN_LEN;
 
     train_id_n = htonl(train_id) ;
     memcpy(pack_buf, &train_id_n, sizeof(l_int32));

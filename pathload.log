@@ -6097,3 +6097,2732 @@ Receiver OptiPlex-7000 starts measurements at sender locahost on Wed May 24 19:3
 
 
 Receiver OptiPlex-7000 starts measurements at sender localhost on Wed May 24 19:39:17 2023 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender -v on Fri May 26 04:57:28 2023 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:57:43 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 304.15Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=301.13Mbps, L=1440B, K=100packets, T=39usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34: 0: 0:33:36: 0:33:33:41:33:39
+  # of DS @ rcvr        :: :50: 0: 0:61:55: 0:59:59:53:61:53
+  Fleet Parameter(act)  :: R=286.44Mbps, L=1440B, K=100packets, T=41usec
+  PCT metric/stream[12] :: 0.43:0.57:0.57:0.29:0.25:0.36:0.29:0.43:0.62:0.14:0.38:0.14:
+  PDT metric/stream[12] :: -0.03:-0.08:0.18:-0.30:-0.51:-0.04:-0.29:-0.58:-0.63:-0.70:-0.35:-0.85:
+  PCT Trend/stream [12] :: NUUNNNNNINNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNUNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 286.44-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :36:32:33:32:34:28:33:33:34:33:30
+  # of DS @ rcvr        :: :52:56:56:57:56:59:57:58:58:52:59
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[12] :: 0.25:0.38:0.50:0.14:0.50:0.29:0.43:0.43:0.29:0.25:0.43:0.50:
+  PDT metric/stream[12] :: -0.90:-0.68:-0.32:-0.68:-0.09:-0.51:-0.22:-0.07:-0.55:0.05:-0.51:-0.22:
+  PCT Trend/stream [12] :: NNUNUNNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 293.60-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 293.60 - 0.00 (Mbps)
+Measurements finished at Fri May 26 04:57:44 2023 
+Measurement latency is 1.33 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:57:52 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 356.98Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :22: 0:26:17:21:17:14:20:22:22:25
+  # of DS @ rcvr        :: :23: 0:35:33:34:32:37:47:46:51:41
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.50:0.33:0.38:0.33:0.44:0.44:0.33:0.25:0.25:0.50:0.44:0.25:
+  PDT metric/stream[12] :: -0.05:-0.40:-0.31:-0.21:-0.21:0.04:-0.44:-0.83:-0.67:-0.62:-0.03:-0.17:
+  PCT Trend/stream [12] :: UNNNNNNNNUNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33: 0: 0: 0: 0:29:32:31:31: 0:34
+  # of DS @ rcvr        :: :61: 0: 0: 0: 0:58:57:60:58: 0:55
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[12] :: 0.29:0.38:0.50:0.46:0.43:0.43:0.14:0.29:0.43:0.40:0.38:0.14:
+  PDT metric/stream[12] :: -0.28:-0.17:-0.09:-0.05:0.05:-0.10:-0.41:-0.33:-0.36:0.03:-0.38:-0.60:
+  PCT Trend/stream [12] :: NNUNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 293.60-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 293.60 - 0.00 (Mbps)
+Measurements finished at Fri May 26 04:57:53 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:58:01 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 407.55Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :19:19:17:17:16:18:19:17: 0:18:16
+  # of DS @ rcvr        :: :20:59:26:26:28:29:46:36: 0:29:30
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.50:0.14:0.20:0.40:0.44:0.44:0.38:0.44:0.40:0.44:0.33:0.22:
+  PDT metric/stream[12] :: 0.08:-0.75:-0.67:-0.33:-0.55:-0.30:-0.83:-0.48:-0.12:-0.42:-0.58:-0.56:
+  PCT Trend/stream [12] :: UNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0:38: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0:59: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.29:0.47:0.36:0.47:0.39:0.41:0.40:0.47:0.35:0.29:0.40:0.35:
+  PDT metric/stream[12] :: -0.67:-0.22:-0.22:-0.28:-0.22:-0.23:-0.26:-0.27:-0.17:-0.63:-0.26:-0.64:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Fri May 26 04:58:03 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:58:57 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 333.02Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=333.03Mbps, L=1429B, K=100packets, T=35usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:27:28:21:30:27:31:34:34:35:32
+  # of DS @ rcvr        :: :53:65:60:70:59:59:57:56:56:50:53
+  Fleet Parameter(act)  :: R=298.87Mbps, L=1429B, K=100packets, T=39usec
+  PCT metric/stream[10] :: 0.38:0.14:0.29:0.29:0.43:0.38:0.25:0.43:0.25:0.12:
+  PDT metric/stream[10] :: -0.24:-0.62:-0.46:-0.56:-0.34:-0.44:-0.94:-0.41:-0.66:-0.92:
+  PCT Trend/stream [10] :: NNNNNNNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 298.87-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :38:33:32:32:26:36:28:35:34:33:38
+  # of DS @ rcvr        :: :51:58:58:56:63:54:59:56:57:58:53
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[11] :: 0.38:0.43:0.29:0.38:0.25:0.57:0.12:0.57:0.29:0.38:0.29:
+  PDT metric/stream[11] :: -0.44:-0.40:-0.76:-0.43:-0.60:-0.05:-0.91:0.20:-0.36:-0.75:-0.88:
+  PCT Trend/stream [11] :: NNNNNUNUNNN
+  PDT Trend/stream [11] :: NNNNNNNNNNN
+  Trend per stream [11] :: NNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 298.87-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 298.87 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:59:03 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 410.16Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25:22:19:15:25:14:21:17:12:18:17
+  # of DS @ rcvr        :: :26:49:28:24:39:23:43:26:20:35:60
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.50:0.12:0.33:0.40:0.11:0.50:0.25:0.30:0.40:0.25:0.14:0.22:
+  PDT metric/stream[12] :: 0.49:-0.87:-0.55:-0.52:-0.41:-0.16:-0.74:0.12:-0.35:-0.56:-0.94:-0.71:
+  PCT Trend/stream [12] :: UNNNNUNNNNNN
+  PDT Trend/stream [12] :: INNNNNNNNNNN
+  Trend per stream [12] :: INNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.40:0.47:0.45:0.25:0.60:0.50:0.47:0.36:0.56:0.40:0.29:0.47:
+  PDT metric/stream[12] :: 0.01:-0.13:-0.14:-0.46:0.12:0.02:-0.18:-0.13:-0.06:-0.11:-0.18:-0.33:
+  PCT Trend/stream [12] :: NNNNUUNNUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Fri May 26 04:59:05 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Fri May 26 04:59:13 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 397.14Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :20:22:18:20:13:16:14:17:14:13:15
+  # of DS @ rcvr        :: :21:42:39:40:29:33:30:31:22:34:31
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.33:0.22:0.22:0.22:0.44:0.44:0.33:0.40:0.22:0.67:0.14:
+  PDT metric/stream[12] :: -0.19:-0.23:-0.54:-0.56:-0.50:-0.46:-0.27:-0.66:-0.35:-0.49:-0.36:-0.68:
+  PCT Trend/stream [12] :: NNNNNNNNNNIN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNUN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :32: 0: 0:30:39:36:40: 0: 0: 0: 0
+  # of DS @ rcvr        :: :60: 0: 0:60:57:58:56: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.29:0.36:0.47:0.29:0.14:0.43:0.38:0.55:0.55:0.36:0.36:0.38:
+  PDT metric/stream[12] :: -0.09:-0.06:-0.45:-0.76:-0.56:-0.63:-0.82:0.03:-0.07:-0.01:-0.14:-0.03:
+  PCT Trend/stream [12] :: NNNNNNNUUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Fri May 26 04:59:14 2023 
+Measurement latency is 1.48 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:02:42 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 335.81Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=333.33Mbps, L=1472B, K=100packets, T=36usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35:34:29: 0: 0:32:29:32:30:33:29
+  # of DS @ rcvr        :: :52:59:56: 0: 0:58:57:56:61:55:60
+  Fleet Parameter(act)  :: R=307.69Mbps, L=1472B, K=100packets, T=39usec
+  PCT metric/stream[12] :: 0.50:0.43:0.38:0.42:0.50:0.29:0.43:0.50:0.43:0.25:0.29:0.50:
+  PDT metric/stream[12] :: -0.09:-0.16:-0.34:-0.01:-0.04:-0.19:-0.32:-0.42:-0.51:-0.42:-0.29:-0.39:
+  PCT Trend/stream [12] :: UNNNUNNUNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 307.69-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :36: 0: 0: 0: 0: 0: 0:29:35: 0:37
+  # of DS @ rcvr        :: :56: 0: 0: 0: 0: 0: 0:60:52: 0:53
+  Fleet Parameter(act)  :: R=315.79Mbps, L=1472B, K=100packets, T=38usec
+  PCT metric/stream[12] :: 0.50:0.62:0.50:0.50:0.33:0.42:0.38:0.43:0.38:0.56:0.25:0.14:
+  PDT metric/stream[12] :: 0.08:-0.11:-0.06:-0.11:-0.08:0.03:-0.12:-0.38:-0.14:0.22:-0.35:-0.74:
+  PCT Trend/stream [12] :: UIUUNNNNNUNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NUNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 315.79-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 315.79 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:02:44 2023 
+Measurement latency is 1.33 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:02:49 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 355.07Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :29:25:24:23:21:28:20:24:21:21:15
+  # of DS @ rcvr        :: :30:54:40:28:41:37:32:35:29:35:37
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.44:0.25:0.33:0.44:0.22:0.33:0.33:0.50:0.33:0.38:0.33:0.22:
+  PDT metric/stream[12] :: 0.16:-0.94:-0.25:-0.21:-0.51:-0.65:-0.62:-0.57:-0.19:-0.65:-0.70:-0.47:
+  PCT Trend/stream [12] :: NNNNNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35: 0:31: 0: 0:31: 0: 0:35:36:32
+  # of DS @ rcvr        :: :57: 0:58: 0: 0:59: 0: 0:60:54:59
+  Fleet Parameter(act)  :: R=315.79Mbps, L=1472B, K=100packets, T=38usec
+  PCT metric/stream[12] :: 0.43:0.44:0.43:0.50:0.50:0.57:0.29:0.25:0.57:0.62:0.14:0.43:
+  PDT metric/stream[12] :: -0.28:-0.14:-0.27:-0.17:-0.10:-0.41:-0.05:-0.12:-0.28:-0.40:-0.75:0.04:
+  PCT Trend/stream [12] :: NNNUUUNNUINN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNUNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 315.79-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 315.79 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:02:50 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:11:14 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 473.63Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25:23:18:17:12: 0: 0:28:13: 0:19
+  # of DS @ rcvr        :: :31:54:43:39:28: 0: 0:40:27: 0:38
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.22:0.25:0.25:0.33:0.33:0.50:0.42:0.22:0.22:0.40:0.44:0.44:
+  PDT metric/stream[12] :: -0.09:-0.44:-0.20:-0.36:-0.71:-0.35:-0.15:-0.74:-0.59:-0.32:-0.45:-0.44:
+  PCT Trend/stream [12] :: NNNNNUNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0:36: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0:60: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.38:0.47:0.35:0.47:0.44:0.43:0.44:0.38:0.47:0.41:0.47:0.37:
+  PDT metric/stream[12] :: 0.09:-0.19:-0.11:-0.24:-0.11:-0.26:0.01:-0.12:-0.08:-0.08:-0.25:-0.21:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:15 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:25 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 178.24Mbps
+  Grey bandwidth resolution    :: 8.91
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=178.27Mbps, L=1465B, K=100packets, T=67usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:21:21:26:23:23:23:17:29:20:20
+  # of DS @ rcvr        :: :32:54:53:35:35:34:53:36:37:34:41
+  Fleet Parameter(act)  :: R=178.27Mbps, L=1465B, K=100packets, T=67usec
+  PCT metric/stream[12] :: 0.44:0.12:0.50:0.25:0.38:0.56:0.38:0.33:0.33:0.33:0.44:0.33:
+  PDT metric/stream[12] :: -0.02:-0.80:-0.26:-0.55:-0.43:-0.21:-0.82:-0.16:-0.61:-0.19:-0.57:-0.59:
+  PCT Trend/stream [12] :: NNUNNUNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 178.27-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :14:14:30:28:31:30:40:31:36:39:35
+  # of DS @ rcvr        :: :85:85:61:62:61:59:55:65:58:56:58
+  Fleet Parameter(act)  :: R=324.32Mbps, L=1472B, K=100packets, T=37usec
+  PCT metric/stream[ 9] :: 0.29:0.29:0.57:0.29:0.25:0.43:0.25:0.14:0.29:
+  PDT metric/stream[ 9] :: -0.37:-0.40:0.22:-0.58:-0.43:-0.11:-0.50:-0.74:-0.53:
+  PCT Trend/stream [ 9] :: NNUNNNNNN
+  PDT Trend/stream [ 9] :: NNNNNNNNN
+  Trend per stream [ 9] :: NNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 324.32-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 324.32 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:27 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 375.00Mbps
+  ADR [.]                      :: 410.90Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=187.50Mbps, L=1472B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35:30:28:27:28:31:31:23:25:27:22
+  # of DS @ rcvr        :: :36:47:43:38:38:40:43:38:47:43:46
+  Fleet Parameter(act)  :: R=187.50Mbps, L=1472B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.25:0.12:0.33:0.44:0.33:0.50:0.44:0.25:0.38:0.25:0.25:
+  PDT metric/stream[12] :: -0.09:-0.70:-0.90:-0.44:-0.52:-0.34:-0.15:-0.19:-0.75:-0.53:-0.53:-0.72:
+  PCT Trend/stream [12] :: NNNNNNUNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 187.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=375.00Mbps, L=1472B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0:32: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0:59: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=324.32Mbps, L=1472B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.50:0.56:0.38:0.42:0.29:0.36:0.36:0.45:0.45:0.40:0.30:0.45:
+  PDT metric/stream[12] :: -0.15:0.23:-0.27:-0.09:-0.52:-0.20:-0.16:-0.36:-0.12:-0.03:-0.20:-0.07:
+  PCT Trend/stream [12] :: UUNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 324.32-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 324.32 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:29 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:29 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 375.00Mbps
+  ADR [.]                      :: 346.49Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=342.86Mbps, L=1472B, K=100packets, T=35usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:29:28:31:32:40:32:31:31:35:31
+  # of DS @ rcvr        :: :54:58:66:61:57:56:61:59:57:60:62
+  Fleet Parameter(act)  :: R=315.79Mbps, L=1472B, K=100packets, T=38usec
+  PCT metric/stream[11] :: 0.50:0.43:0.43:0.29:0.38:0.29:0.14:0.29:0.29:0.29:0.38:
+  PDT metric/stream[11] :: -0.08:-0.60:-0.32:-0.60:-0.21:-0.46:-0.96:-0.24:-0.16:-0.02:-0.26:
+  PCT Trend/stream [11] :: UNNNNNNNNNN
+  PDT Trend/stream [11] :: NNNNNNNNNNN
+  Trend per stream [11] :: NNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 315.79-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=375.00Mbps, L=1472B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :32:28:31:28:32:35:31:29:32:30:30
+  # of DS @ rcvr        :: :58:67:63:65:63:56:63:58:61:63:62
+  Fleet Parameter(act)  :: R=324.32Mbps, L=1472B, K=100packets, T=37usec
+  PCT metric/stream[ 6] :: 0.29:0.12:0.29:0.29:0.57:0.43:
+  PDT metric/stream[ 6] :: -0.09:-0.77:-0.26:-0.25:-0.04:-0.58:
+  PCT Trend/stream [ 6] :: NNNNUN
+  PDT Trend/stream [ 6] :: NNNNNN
+  Trend per stream [ 6] :: NNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 324.32-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 324.32 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:32 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 455.46Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :26:25:24:20:21:15:19:17:16:21:24
+  # of DS @ rcvr        :: :27:41:32:30:28:25:26:29:21:32:31
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.56:0.67:0.44:0.44:0.56:0.40:0.30:0.44:0.40:0.33:0.33:0.33:
+  PDT metric/stream[12] :: 0.00:-0.33:-0.56:-0.38:-0.41:0.01:-0.59:-0.18:-0.77:-0.40:-0.69:-0.39:
+  PCT Trend/stream [12] :: UINNUNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NUNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.29:0.45:0.40:0.31:0.36:0.56:0.47:0.29:0.44:0.29:0.29:0.50:
+  PDT metric/stream[12] :: -0.26:-0.15:0.07:-0.40:-0.14:-0.10:-0.20:-0.30:-0.13:-0.27:-0.18:-0.19:
+  PCT Trend/stream [12] :: NNNNNUNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 352.94-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 352.94 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:33 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:34 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 260.06Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=260.00Mbps, L=1467B, K=100packets, T=46usec
+  Lossrate per stream   :: :0.0:1.0:1.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :40:29:37:40:38:41:40:39:33:33:39
+  # of DS @ rcvr        :: :48:63:51:50:51:49:53:50:41:37:51
+  Fleet Parameter(act)  :: R=234.51Mbps, L=1467B, K=100packets, T=51usec
+  PCT metric/stream[11] :: 0.38:0.50:0.43:0.25:0.12:0.38:0.14:0.44:0.33:0.25:0.38:
+  PDT metric/stream[11] :: -0.12:-0.23:-0.33:-0.64:-0.89:-0.25:-0.29:-0.44:-0.90:-0.72:-0.60:
+  PCT Trend/stream [11] :: NUNNNNNNNNN
+  PDT Trend/stream [11] :: NNNNNNNNNNN
+  Trend per stream [11] :: NNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 234.51-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :42:38:15:15:41:29:40:14:16:38:15
+  # of DS @ rcvr        :: :47:57:84:83:55:65:56:85:81:46:84
+  Fleet Parameter(act)  :: R=250.00Mbps, L=1472B, K=100packets, T=48usec
+  PCT metric/stream[ 6] :: 0.25:0.43:0.50:0.38:0.38:0.38:
+  PDT metric/stream[ 6] :: -0.58:-0.33:-0.25:-0.15:-0.72:-0.34:
+  PCT Trend/stream [ 6] :: NNUNNN
+  PDT Trend/stream [ 6] :: NNNNNN
+  Trend per stream [ 6] :: NNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 250.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 250.00 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:36 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 355.93Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:20:23:20:16:18:22:20:25:16:26
+  # of DS @ rcvr        :: :28:51:30:30:23:29:31:30:34:32:37
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.33:0.25:0.44:0.22:0.40:0.44:0.33:0.44:0.22:0.33:0.33:0.11:
+  PDT metric/stream[12] :: 0.42:-0.78:-0.64:-0.58:-0.71:-0.38:-0.35:-0.33:-0.68:-0.50:-0.33:-0.51:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: UNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0:30:30:31: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0:58:59:59: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=342.86Mbps, L=1472B, K=100packets, T=35usec
+  PCT metric/stream[12] :: 0.44:0.45:0.44:0.29:0.43:0.14:0.33:0.44:0.38:0.40:0.40:0.44:
+  PDT metric/stream[12] :: -0.05:-0.03:-0.22:-0.29:-0.60:-0.90:-0.14:-0.03:-0.22:0.15:0.10:-0.20:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 342.86-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 342.86 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:37 2023 
+Measurement latency is 1.52 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:45 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 375.00Mbps
+  ADR [.]                      :: 339.69Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=339.66Mbps, L=1458B, K=100packets, T=35usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:31:28:34:13:15:11:26:37:32:37
+  # of DS @ rcvr        :: :49:66:65:62:86:83:88:63:58:58:54
+  Fleet Parameter(act)  :: R=312.84Mbps, L=1458B, K=100packets, T=38usec
+  PCT metric/stream[ 6] :: 0.25:0.29:0.43:0.29:0.25:0.50:
+  PDT metric/stream[ 6] :: -0.25:-0.47:0.09:-0.77:-0.54:-0.53:
+  PCT Trend/stream [ 6] :: NNNNNU
+  PDT Trend/stream [ 6] :: NNNNNN
+  Trend per stream [ 6] :: NNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 312.84-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=375.00Mbps, L=1472B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35:28:14:34:14:29:34:34:27:29:32
+  # of DS @ rcvr        :: :56:61:85:57:85:61:60:61:64:56:61
+  Fleet Parameter(act)  :: R=324.32Mbps, L=1472B, K=100packets, T=37usec
+  PCT metric/stream[ 8] :: 0.50:0.43:0.29:0.29:0.43:0.43:0.25:0.29:
+  PDT metric/stream[ 8] :: -0.07:-0.46:-0.24:-0.52:-0.25:-0.26:-0.36:-0.56:
+  PCT Trend/stream [ 8] :: UNNNNNNN
+  PDT Trend/stream [ 8] :: NNNNNNNN
+  Trend per stream [ 8] :: NNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 324.32-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 324.32 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:48 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 357.01Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :28:23:27:16:17:17:17:17:18:17:17
+  # of DS @ rcvr        :: :30:35:31:32:40:33:35:49:35:33:34
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.56:0.50:0.33:0.33:0.44:0.22:0.25:0.25:0.25:0.33:0.44:0.44:
+  PDT metric/stream[12] :: 0.19:-0.46:-0.31:-0.48:-0.70:-0.72:-0.33:-0.79:-0.58:-0.30:-0.28:-0.46:
+  PCT Trend/stream [12] :: UUNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :11:14:40:31:15:31:12:11:30:28:32
+  # of DS @ rcvr        :: :88:85:56:60:84:63:87:88:63:65:62
+  Fleet Parameter(act)  :: R=324.32Mbps, L=1472B, K=100packets, T=37usec
+  PCT metric/stream[ 4] :: 0.38:0.29:0.57:0.43:
+  PDT metric/stream[ 4] :: -0.12:-0.33:-0.29:0.22:
+  PCT Trend/stream [ 4] :: NNUN
+  PDT Trend/stream [ 4] :: NNNN
+  Trend per stream [ 4] :: NNNN
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 176.47 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:51 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 488.37Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:19:26:19:27:20:17:15:13:16:25
+  # of DS @ rcvr        :: :34:58:42:38:45:32:28:28:31:40:40
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.33:0.14:0.44:0.33:0.38:0.33:0.44:0.33:0.44:0.33:0.33:0.12:
+  PDT metric/stream[12] :: 0.11:-0.96:-0.02:-0.53:-0.40:-0.29:-0.49:-0.45:-0.68:-0.37:-0.15:-0.78:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: :59: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.57:0.33:0.36:0.40:0.36:0.45:0.45:0.55:0.40:0.40:0.36:0.40:
+  PDT metric/stream[12] :: -0.39:-0.13:-0.80:-0.60:0.03:-0.05:0.15:0.37:0.02:-0.03:0.04:-0.03:
+  PCT Trend/stream [12] :: UNNNNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNUNNNN
+  Trend per stream [12] :: NNNNNNNUNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 352.94-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 352.94 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:52 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 10.20.22.195 on Mon May 29 15:11:56 2023 
+  Maximum packet size          :: 1472 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 352.94Mbps
+  ADR [.]                      :: 481.57Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:23:22:15:13:15:27: 0: 0:24:22
+  # of DS @ rcvr        :: :31:51:42:30:32:30:44: 0: 0:33:40
+  Fleet Parameter(act)  :: R=176.47Mbps, L=1472B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.67:0.25:0.22:0.44:0.44:0.56:0.12:0.36:0.50:0.33:0.33:0.50:
+  PDT metric/stream[12] :: -0.08:-0.42:-0.38:-0.10:-0.60:-0.50:-0.84:-0.15:-0.21:-0.26:-0.70:-0.64:
+  PCT Trend/stream [12] :: INNNNUNNUNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: UNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 176.47-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=352.94Mbps, L=1472B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.56:0.47:0.36:0.50:0.44:0.45:0.43:0.27:0.36:0.38:0.44:0.31:
+  PDT metric/stream[12] :: 0.04:-0.09:-0.16:0.07:-0.29:-0.14:-0.05:-0.59:-0.19:-0.08:-0.18:-0.07:
+  PCT Trend/stream [12] :: UNNUNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 352.94-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 352.94 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:11:58 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:02 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 313.77Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=313.73Mbps, L=1423B, K=100packets, T=37usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0:31:31:33:34:35:34:35: 0:32:34
+  # of DS @ rcvr        :: : 0:61:59:57:57:57:57:53: 0:56:53
+  Fleet Parameter(act)  :: R=297.64Mbps, L=1423B, K=100packets, T=39usec
+  PCT metric/stream[12] :: 0.47:0.57:0.14:0.43:0.14:0.43:0.29:0.25:0.46:0.38:0.38:0.29:
+  PDT metric/stream[12] :: -0.09:-0.36:-0.81:-0.49:-0.84:-0.33:-0.79:-0.69:-0.05:-0.35:-0.60:-0.30:
+  PCT Trend/stream [12] :: NUNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 297.64-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :30: 0:38: 0:32:35: 0:31: 0:34:30
+  # of DS @ rcvr        :: :56: 0:57: 0:59:50: 0:60: 0:59:59
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[12] :: 0.38:0.33:0.43:0.50:0.29:0.29:0.53:0.43:0.53:0.14:0.29:0.50:
+  PDT metric/stream[12] :: -0.43:-0.09:-0.36:0.05:-0.77:-0.73:-0.06:-0.43:-0.11:-0.57:-0.68:-0.41:
+  PCT Trend/stream [12] :: NNNUNNUNUNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 309.05-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 309.05 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:03 2023 
+Measurement latency is 1.33 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:06 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 420.65Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33:28:23:29:21:24:26:26:21:25:27
+  # of DS @ rcvr        :: :40:57:59:40:43:38:38:44:34:43:46
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.29:0.29:0.33:0.25:0.44:0.22:0.25:0.44:0.25:0.50:0.31:
+  PDT metric/stream[12] :: -0.02:-0.70:-0.94:-0.77:-0.86:-0.65:-0.92:-0.88:-0.59:-0.96:-0.81:-0.19:
+  PCT Trend/stream [12] :: NNNNNNNNNNUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.46:0.40:0.40:0.50:0.36:0.53:0.44:0.45:0.31:0.53:0.36:0.45:
+  PDT metric/stream[12] :: 0.25:-0.24:-0.20:-0.03:0.04:-0.17:-0.04:-0.04:-0.29:0.06:-0.33:-0.15:
+  PCT Trend/stream [12] :: NNNUNUNNNUNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:08 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:12 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 433.33Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :30: 0:30:30:23:18:18:26:28:29:18
+  # of DS @ rcvr        :: :32: 0:46:35:46:39:23:32:38:38:30
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.22:0.43:0.25:0.50:0.25:0.22:0.30:0.56:0.22:0.11:0.44:0.12:
+  PDT metric/stream[12] :: -0.30:-0.13:-0.91:-0.42:-0.95:-0.83:-0.71:0.15:-0.86:-0.80:-0.07:-0.89:
+  PCT Trend/stream [12] :: NNNUNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :30: 0:30:30:32:33:37:32: 0:35:32
+  # of DS @ rcvr        :: :57: 0:60:58:58:57:52:56: 0:57:58
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.29:0.40:0.29:0.29:0.43:0.57:0.38:0.50:0.50:0.29:0.00:0.40:
+  PDT metric/stream[12] :: -0.60:-0.33:-0.52:-0.68:0.35:-0.45:-0.45:-0.09:-0.20:-0.45:-1.00:-0.44:
+  PCT Trend/stream [12] :: NNNNNUNUUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 317.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:14 2023 
+Measurement latency is 1.47 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:19 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 264.09Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=264.18Mbps, L=1425B, K=100packets, T=44usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:12:44:42:38:42:35:41:42:42:43
+  # of DS @ rcvr        :: :28:41:47:52:50:49:54:52:49:48:48
+  Fleet Parameter(act)  :: R=223.54Mbps, L=1425B, K=100packets, T=52usec
+  PCT metric/stream[12] :: 0.44:0.56:0.25:0.38:0.43:0.38:0.38:0.38:0.38:0.38:0.25:0.43:
+  PDT metric/stream[12] :: 0.03:-0.53:-0.66:-0.43:-0.69:-0.24:-0.19:-0.43:-0.35:-0.71:-0.61:-0.65:
+  PCT Trend/stream [12] :: NUNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 223.54-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :40:11:11:36: 9:11:32:11:11:11:36
+  # of DS @ rcvr        :: :51:87:86:59:90:86:60:88:88:86:58
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[ 4] :: 0.38:0.29:0.29:0.29:
+  PDT metric/stream[ 4] :: -0.51:-0.44:-0.33:-0.52:
+  PCT Trend/stream [ 4] :: NNNN
+  PDT Trend/stream [ 4] :: NNNN
+  Trend per stream [ 4] :: NNNN
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 223.54 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:29 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 351.32Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :26:18:19:13:20:13:22:14:18:18:21
+  # of DS @ rcvr        :: :31:71:35:27:40:31:38:28:31:34:40
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[11] :: 0.44:0.38:0.33:0.22:0.33:0.44:0.22:0.44:0.44:0.22:0.20:
+  PDT metric/stream[11] :: -0.39:-0.32:-0.66:-0.71:-0.46:-0.23:-0.76:-0.35:-0.51:-0.81:-0.78:
+  PCT Trend/stream [11] :: NNNNNNNNNNN
+  PDT Trend/stream [11] :: NNNNNNNNNNN
+  Trend per stream [11] :: NNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:23:32:36:30:11:34:27:30:31:12
+  # of DS @ rcvr        :: :61:73:62:62:67:88:63:66:67:63:87
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[ 4] :: 0.43:0.29:0.29:0.29:
+  PDT metric/stream[ 4] :: 0.12:-0.35:-0.22:-0.68:
+  PCT Trend/stream [ 4] :: NNNN
+  PDT Trend/stream [ 4] :: NNNN
+  Trend per stream [ 4] :: NNNN
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 172.71 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:38 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 420.65Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :36: 0:23:24:24:27:27:22:27:23:26
+  # of DS @ rcvr        :: :37: 0:46:32:43:39:39:54:44:45:47
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.22:0.36:0.12:0.44:0.12:0.33:0.22:0.25:0.12:0.12:0.25:0.38:
+  PDT metric/stream[12] :: -0.08:-0.19:-0.42:-0.40:-0.70:-0.45:-0.50:-0.68:-0.70:-0.91:-0.56:-0.25:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.59:0.40:0.38:0.45:0.70:0.44:0.27:0.44:0.40:0.56:0.50:0.55:
+  PDT metric/stream[12] :: -0.25:-0.36:-0.23:0.05:0.11:-0.09:0.01:0.11:-0.11:0.33:0.08:0.03:
+  PCT Trend/stream [12] :: UNNNINNNNUUU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNUNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:39 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:43 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 470.53Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :31:29:31:22:23:25:25:24:21:25:27
+  # of DS @ rcvr        :: :32:45:41:33:35:34:43:40:31:38:43
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.38:0.22:0.56:0.25:0.11:0.38:0.44:0.44:0.33:0.25:0.38:
+  PDT metric/stream[12] :: -0.48:-0.44:-0.50:-0.59:-0.52:-0.76:-0.26:-0.51:-0.44:-0.51:-0.39:-0.42:
+  PCT Trend/stream [12] :: NNNUNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.27:0.50:0.30:0.45:0.36:0.50:0.44:0.55:0.40:0.40:0.40:0.40:
+  PDT metric/stream[12] :: 0.11:0.05:-0.16:0.13:-0.16:0.24:0.11:0.09:-0.09:0.09:0.06:-0.25:
+  PCT Trend/stream [12] :: NUNNNUNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:44 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:45 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 419.12Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :31:21:23:25:22: 0: 0: 0: 0:27:23
+  # of DS @ rcvr        :: :32:57:54:56:53: 0: 0: 0: 0:42:38
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.14:0.25:0.38:0.50:0.47:0.41:0.30:0.50:0.22:0.22:0.50:
+  PDT metric/stream[12] :: -0.08:-0.78:-0.83:-0.75:-0.79:-0.03:-0.10:-0.29:-0.10:-0.41:-0.81:-0.76:
+  PCT Trend/stream [12] :: NNNNUNNNUNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.31:0.33:0.50:0.36:0.36:0.40:0.41:0.50:0.35:0.50:0.47:0.30:
+  PDT metric/stream[12] :: -0.03:0.23:-0.14:-0.20:0.01:0.14:-0.27:-0.30:-0.47:-0.13:-0.47:-0.17:
+  PCT Trend/stream [12] :: NNUNNNNUNUNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:46 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:12:48 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 429.44Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:22:32:27:30:28:28:31:30:30:28
+  # of DS @ rcvr        :: :35:60:40:36:38:39:33:38:39:40:43
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.25:0.29:0.33:0.33:0.11:0.22:0.33:0.33:0.11:0.44:0.38:0.22:
+  PDT metric/stream[12] :: 0.68:-0.97:-0.41:-0.67:-0.94:-0.81:-0.60:-0.54:-0.92:-0.56:-0.49:-0.86:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: INNNNNNNNNNN
+  Trend per stream [12] :: UNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.35:0.43:0.47:0.45:0.38:0.47:0.50:0.44:0.31:0.40:0.33:0.36:
+  PDT metric/stream[12] :: -0.10:-0.03:-0.23:-0.17:-0.09:-0.44:-0.01:-0.03:-0.09:0.21:-0.19:-0.02:
+  PCT Trend/stream [12] :: NNNNNNUNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:12:49 2023 
+Measurement latency is 1.45 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:41:40 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 365.60Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :17:22:24:20:19:13:20:20:15:13:17
+  # of DS @ rcvr        :: :20:47:27:31:37:25:31:34:31:26:28
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.25:0.44:0.33:0.33:0.30:0.44:0.44:0.33:0.40:0.22:0.33:
+  PDT metric/stream[12] :: -0.08:-0.54:-0.30:-0.45:-0.58:-0.21:-0.82:-0.49:-0.43:-0.43:-0.77:-0.52:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0:33: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0:60: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.31:0.50:0.40:0.50:0.14:0.38:0.56:0.71:0.50:0.38:0.44:0.47:
+  PDT metric/stream[12] :: -0.03:0.06:0.09:0.00:-0.94:0.02:-0.10:-0.05:-0.04:-0.12:-0.06:0.04:
+  PCT Trend/stream [12] :: NUNUNNUIUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNUNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:41:42 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:41:51 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 347.08Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25: 0:16:12:19:15:13:15:16:13:18
+  # of DS @ rcvr        :: :26: 0:24:18:35:23:19:24:29:29:28
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.38:0.40:0.33:0.38:0.40:0.30:0.50:0.22:0.22:0.22:0.56:
+  PDT metric/stream[12] :: 0.12:-0.12:-0.45:-0.29:-0.72:-0.22:-0.62:-0.44:-0.51:-0.83:-0.73:-0.57:
+  PCT Trend/stream [12] :: NNNNNNNUNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0:37:37:40:37:35:36:35:37:36:35
+  # of DS @ rcvr        :: : 0:60:55:55:55:54:53:56:53:56:56
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.43:0.43:0.50:0.38:0.12:0.38:0.12:0.38:0.38:0.38:0.62:0.36:
+  PDT metric/stream[12] :: -0.05:-0.35:-0.09:-0.59:-0.65:-0.42:-0.84:-0.41:-0.17:-0.52:-0.12:-0.24:
+  PCT Trend/stream [12] :: NNUNNNNNNNIN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNUN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 317.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:41:52 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:41:54 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 421.27Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25:23:15:18:14:17:14:13:18:11:16
+  # of DS @ rcvr        :: :26:40:30:26:25:29:22:21:25:24:26
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.50:0.33:0.11:0.40:0.30:0.22:0.20:0.60:0.60:0.40:0.50:0.33:
+  PDT metric/stream[12] :: -0.07:-0.78:-0.58:-0.32:-0.52:-0.15:-0.59:-0.68:-0.13:-0.25:-0.29:-0.60:
+  PCT Trend/stream [12] :: UNNNNNNUUNUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0:35:31:37:36
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0:60:60:60:56
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.46:0.56:0.44:0.39:0.29:0.47:0.41:0.29:0.29:0.29:0.38:0.38:
+  PDT metric/stream[12] :: -0.22:0.23:-0.35:-0.22:-0.05:0.02:-0.11:-0.37:-0.18:-0.30:-0.53:-0.25:
+  PCT Trend/stream [12] :: NUNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:41:55 2023 
+Measurement latency is 1.50 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:41:56 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 441.98Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :23:18:25:15:13:16:15:17:18:13:15
+  # of DS @ rcvr        :: :24:59:41:30:29:28:32:26:44:16:29
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.29:0.33:0.22:0.56:0.44:0.44:0.60:0.50:0.40:0.33:0.30:
+  PDT metric/stream[12] :: -0.15:-0.65:-0.41:-0.37:-0.47:-0.19:-0.14:0.01:-0.12:0.06:-0.28:-0.77:
+  PCT Trend/stream [12] :: NNNNUNNUUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :31:37: 0: 0: 0: 0:37:36: 0: 0: 0
+  # of DS @ rcvr        :: :60:53: 0: 0: 0: 0:60:59: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.43:0.38:0.38:0.41:0.42:0.19:0.43:0.14:0.39:0.44:0.44:0.17:
+  PDT metric/stream[12] :: -0.52:-0.43:-0.25:-0.28:0.16:-0.04:0.11:-0.07:-0.16:-0.04:-0.18:-0.22:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:41:58 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:42:00 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 427.53Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33:27:30:28:25:31:26:24:22:28:27
+  # of DS @ rcvr        :: :35:55:41:39:32:37:35:28:48:36:42
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.38:0.25:0.11:0.33:0.33:0.22:0.25:0.33:0.38:0.33:0.33:0.56:
+  PDT metric/stream[12] :: -0.54:-0.68:-0.71:-0.55:-0.66:-0.93:-0.32:-0.53:-0.57:-0.44:-0.06:-0.45:
+  PCT Trend/stream [12] :: NNNNNNNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.44:0.56:0.31:0.31:0.50:0.46:0.31:0.44:0.36:0.53:0.53:0.38:
+  PDT metric/stream[12] :: -0.36:-0.08:-0.04:0.09:-0.02:0.18:-0.07:0.00:-0.03:-0.03:-0.12:-0.12:
+  PCT Trend/stream [12] :: NUNNUNNNNUUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:42:01 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:42:03 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 317.93Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35:37:32:34:25:34:33:30:34:12:36
+  # of DS @ rcvr        :: :52:61:65:55:67:59:61:63:61:87:62
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[ 7] :: 0.25:0.29:0.50:0.29:0.29:0.29:0.29:
+  PDT metric/stream[ 7] :: -0.70:-0.31:0.07:-0.41:-0.60:-0.04:-0.47:
+  PCT Trend/stream [ 7] :: NNUNNNN
+  PDT Trend/stream [ 7] :: NNNNNNN
+  Trend per stream [ 7] :: NNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 309.05-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35:29:34:30:32:32:36:31:33:31:35
+  # of DS @ rcvr        :: :60:63:59:62:61:59:53:63:57:60:60
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[10] :: 0.43:0.14:0.29:0.57:0.43:0.50:0.29:0.29:0.43:0.25:
+  PDT metric/stream[10] :: -0.25:-0.83:-0.30:0.03:-0.18:-0.65:-0.29:-0.79:-0.14:-0.40:
+  PCT Trend/stream [10] :: NNNUNUNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 317.41 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:42:08 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 437.28Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:33:23:28:23:24:24:27:25:24:27
+  # of DS @ rcvr        :: :39:45:39:32:32:32:31:41:34:30:40
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.33:0.25:0.44:0.44:0.67:0.33:0.44:0.22:0.44:0.22:0.44:0.33:
+  PDT metric/stream[12] :: 0.50:0.02:-0.12:-0.54:0.80:-0.44:-0.33:-0.10:0.14:-0.59:-0.59:-0.59:
+  PCT Trend/stream [12] :: NNNNINNNNNNN
+  PDT Trend/stream [12] :: INNNINNNNNNN
+  Trend per stream [12] :: UNNNINNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35: 0: 0:28: 0:32:33:30:31:30: 0
+  # of DS @ rcvr        :: :55: 0: 0:57: 0:60:58:59:59:59: 0
+  Fleet Parameter(act)  :: R=326.22Mbps, L=1440B, K=100packets, T=36usec
+  PCT metric/stream[12] :: 0.38:0.41:0.58:0.29:0.36:0.29:0.29:0.14:0.29:0.29:0.50:0.29:
+  PDT metric/stream[12] :: -0.50:-0.02:0.17:-0.66:0.04:-0.55:-0.46:-0.67:-0.47:-0.29:0.05:-0.37:
+  PCT Trend/stream [12] :: NNUNNNNNNNUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 326.22-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 326.22 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:42:09 2023 
+Measurement latency is 1.45 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:42:13 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 430.41Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33:21:25:23:25:28:24:27:28:28:28
+  # of DS @ rcvr        :: :36:58:51:44:39:43:57:36:48:37:43
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.29:0.25:0.25:0.44:0.38:0.43:0.22:0.25:0.33:0.38:0.33:
+  PDT metric/stream[12] :: -0.01:-0.94:-0.83:-0.93:-0.66:-0.52:-0.73:-0.76:-0.80:-0.46:-0.50:-0.43:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0:32: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0:59: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  PCT metric/stream[12] :: 0.47:0.53:0.53:0.36:0.35:0.43:0.62:0.31:0.55:0.36:0.41:0.36:
+  PDT metric/stream[12] :: 0.33:0.07:-0.12:-0.11:-0.09:-0.31:-0.09:-0.07:0.13:-0.04:-0.11:0.04:
+  PCT Trend/stream [12] :: NUUNNNINUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNUNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 367.00-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 367.00 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:42:15 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Mon May 29 15:42:19 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 353.47Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :24: 0:21:18:13:10:11:13:11: 0:15
+  # of DS @ rcvr        :: :25: 0:35:35:25:19:27:28:15: 0:32
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.35:0.25:0.38:0.50:0.20:0.22:0.56:0.20:0.44:0.33:0.33:
+  PDT metric/stream[12] :: -0.09:-0.36:-0.64:-0.70:-0.55:-0.42:-0.78:-0.72:-0.74:-0.12:-0.50:-0.26:
+  PCT Trend/stream [12] :: NNNNUNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :32: 0:37:40:34:39:40:36:40:41:36
+  # of DS @ rcvr        :: :55: 0:52:51:61:53:53:53:51:49:53
+  Fleet Parameter(act)  :: R=255.30Mbps, L=1440B, K=100packets, T=46usec
+  PCT metric/stream[12] :: 0.38:0.47:0.38:0.38:0.43:0.25:0.38:0.50:0.25:0.25:0.38:0.38:
+  PDT metric/stream[12] :: -0.04:0.04:-0.21:-0.24:-0.48:-0.44:-0.11:-0.42:-0.53:-0.76:-0.19:-0.47:
+  PCT Trend/stream [12] :: NNNNNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 255.30-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 255.30 - 0.00 (Mbps)
+Measurements finished at Mon May 29 15:42:21 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:43:44 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 256.67Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=255.30Mbps, L=1440B, K=100packets, T=46usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :44:15:40:39:40:40:39:39:41:41:42
+  # of DS @ rcvr        :: :47:81:52:51:53:54:48:53:52:49:50
+  Fleet Parameter(act)  :: R=234.88Mbps, L=1440B, K=100packets, T=50usec
+  PCT metric/stream[11] :: 0.50:0.38:0.38:0.25:0.38:0.38:0.38:0.38:0.38:0.29:0.14:
+  PDT metric/stream[11] :: 0.50:-0.11:-0.13:-0.76:0.12:-0.87:-0.70:-0.80:-0.71:-0.84:-0.71:
+  PCT Trend/stream [11] :: UNNNNNNNNNN
+  PDT Trend/stream [11] :: INNNNNNNNNN
+  Trend per stream [11] :: INNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 234.88-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :27:29:29:34:31:27:12:11:13:30:11
+  # of DS @ rcvr        :: :61:64:66:58:63:65:86:88:86:62:88
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[ 3] :: 0.43:0.29:0.43:
+  PDT metric/stream[ 3] :: -0.30:-0.39:-0.23:
+  PCT Trend/stream [ 3] :: NNN
+  PDT Trend/stream [ 3] :: NNN
+  Trend per stream [ 3] :: NNN
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 234.88 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:44:53 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 245.40Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=244.67Mbps, L=1440B, K=100packets, T=48usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :42:14:42:44:41:40:39:44:40:45:42
+  # of DS @ rcvr        :: :45:84:51:48:54:52:54:52:48:50:50
+  Fleet Parameter(act)  :: R=230.27Mbps, L=1440B, K=100packets, T=51usec
+  PCT metric/stream[11] :: 0.38:0.38:0.12:0.38:0.38:0.25:0.25:0.12:0.29:0.00:0.50:
+  PDT metric/stream[11] :: -0.07:-0.33:-0.83:-0.60:0.16:-0.94:-0.95:-0.98:-0.84:-1.00:0.47:
+  PCT Trend/stream [11] :: NNNNNNNNNNU
+  PDT Trend/stream [11] :: NNNNNNNNNNI
+  Trend per stream [11] :: NNNNNNNNNNI
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 230.27-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34:36:32:35:32:37:32:33:36:33:37
+  # of DS @ rcvr        :: :58:57:61:58:61:58:61:60:58:62:59
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[11] :: 0.29:0.14:0.43:0.57:0.57:0.29:0.29:0.29:0.29:0.29:0.57:
+  PDT metric/stream[11] :: -0.52:-0.90:0.03:-0.41:-0.05:-0.86:-0.31:-0.66:-0.47:-0.40:-0.25:
+  PCT Trend/stream [11] :: NNNUUNNNNNU
+  PDT Trend/stream [11] :: NNNNNNNNNNN
+  Trend per stream [11] :: NNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 309.05-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 309.05 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:44:57 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 349.18Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :29:24:26:14:17:14:15:13:17:18:11
+  # of DS @ rcvr        :: :31:57:41:31:28:24:24:25:27:31:18
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.33:0.14:0.44:0.56:0.11:0.50:0.30:0.60:0.44:0.56:0.22:0.40:
+  PDT metric/stream[12] :: -0.37:-0.82:-0.03:-0.34:-0.62:0.00:-0.13:-0.24:-0.26:-0.23:-0.49:-0.15:
+  PCT Trend/stream [12] :: NNNUNUNUNUNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0:36: 0: 0: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0:59: 0: 0: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.38:0.40:0.29:0.44:0.38:0.44:0.46:0.56:0.35:0.44:0.39:0.25:
+  PDT metric/stream[12] :: -0.15:0.09:-0.36:-0.46:-0.29:-0.08:-0.08:-0.13:-0.35:-0.36:-0.26:-0.13:
+  PCT Trend/stream [12] :: NNNNNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:44:59 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:45:05 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 475.98Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :22:26:10:12:15:16:17:15:14: 8:13
+  # of DS @ rcvr        :: :23:45:18:28:29:30:24:23:27:16:33
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.30:0.38:0.44:0.22:0.33:0.33:0.20:0.50:0.33:0.30:0.33:0.22:
+  PDT metric/stream[12] :: 0.04:-0.57:0.08:-0.64:-0.28:-0.61:-0.34:-0.19:-0.48:0.04:-0.51:-0.44:
+  PCT Trend/stream [12] :: NNNNNNNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0:32: 0: 0: 0:35: 0: 0: 0: 0
+  # of DS @ rcvr        :: : 0: 0:59: 0: 0: 0:56: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.25:0.47:0.29:0.43:0.41:0.29:0.38:0.19:0.33:0.44:0.44:0.27:
+  PDT metric/stream[12] :: -0.16:-0.12:-0.36:-0.07:-0.37:-0.26:-0.66:-0.61:-0.29:-0.22:-0.01:-0.44:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:45:06 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:45:10 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 2 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 317.93Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :35: 0: 0:38: 0:32:33:32:32:30:32
+  # of DS @ rcvr        :: :56: 0: 0:54: 0:60:60:60:58:59:61
+  Fleet Parameter(act)  :: R=301.13Mbps, L=1440B, K=100packets, T=39usec
+  PCT metric/stream[12] :: 0.62:0.56:0.53:0.50:0.41:0.43:0.29:0.43:0.29:0.43:0.29:0.57:
+  PDT metric/stream[12] :: 0.34:-0.09:-0.09:0.15:-0.07:-0.23:-0.70:-0.16:-0.27:-0.04:-0.40:-0.28:
+  PCT Trend/stream [12] :: IUUUNNNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: UNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 301.13-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :41: 0:32:35:32: 0: 0: 0: 0:35:34
+  # of DS @ rcvr        :: :54: 0:61:61:61: 0: 0: 0: 0:55:56
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.38:0.42:0.29:0.43:0.29:0.53:0.55:0.47:0.47:0.25:0.38:0.67:
+  PDT metric/stream[12] :: 0.02:-0.20:-0.45:-0.43:-0.52:-0.26:0.07:-0.00:0.06:-0.64:0.00:0.11:
+  PCT Trend/stream [12] :: NNNNNUUNNNNI
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNU
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 317.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:45:11 2023 
+Measurement latency is 1.33 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:45:22 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 332.63Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=332.57Mbps, L=1427B, K=100packets, T=35usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :39:35:30:35:33:16:16:28:30:31:37
+  # of DS @ rcvr        :: :51:59:61:61:54:82:81:62:58:61:53
+  Fleet Parameter(act)  :: R=306.32Mbps, L=1427B, K=100packets, T=38usec
+  PCT metric/stream[10] :: 0.38:0.43:0.29:0.14:0.38:0.43:0.29:0.29:0.25:0.50:
+  PDT metric/stream[10] :: -0.26:-0.61:-0.35:-0.75:-0.39:0.13:-0.10:-0.37:-0.39:-0.49:
+  PCT Trend/stream [10] :: NNNNNNNNNU
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 306.32-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :36:31:35:21:31:11:12:11:34:10:35
+  # of DS @ rcvr        :: :52:63:57:70:62:87:87:88:61:88:58
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[ 5] :: 0.38:0.14:0.29:0.43:0.29:
+  PDT metric/stream[ 5] :: -0.35:-0.95:-0.42:-0.52:-0.52:
+  PCT Trend/stream [ 5] :: NNNNN
+  PDT Trend/stream [ 5] :: NNNNN
+  Trend per stream [ 5] :: NNNNN
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 306.32 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:48:07 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 321.12Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :37:33:32:34:35:34:14:34:19:32:31
+  # of DS @ rcvr        :: :51:52:57:57:55:52:85:54:80:58:59
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[10] :: 0.38:0.25:0.57:0.29:0.25:0.38:0.38:0.43:0.43:0.14:
+  PDT metric/stream[10] :: -0.10:-0.41:-0.32:-0.42:-0.57:-0.65:-0.67:-0.41:-0.61:-0.93:
+  PCT Trend/stream [10] :: NNUNNNNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 293.60-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33:13:30:33:34:28:33:30:31:30:33
+  # of DS @ rcvr        :: :56:84:60:57:56:59:56:63:59:56:60
+  Fleet Parameter(act)  :: R=309.05Mbps, L=1440B, K=100packets, T=38usec
+  PCT metric/stream[10] :: 0.38:0.43:0.43:0.25:0.29:0.50:0.29:0.25:0.43:0.29:
+  PDT metric/stream[10] :: -0.43:-0.32:-0.36:-0.38:-0.73:-0.10:-0.65:-0.36:-0.83:-0.38:
+  PCT Trend/stream [10] :: NNNNNUNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 309.05-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 309.05 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:48:15 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 0 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 182.34Mbps
+  Grey bandwidth resolution    :: 9.12
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=182.38Mbps, L=1431B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :21:20:19:27:24:21:24:22:22:19:24
+  # of DS @ rcvr        :: :22:65:50:40:56:47:53:56:63:67:43
+  Fleet Parameter(act)  :: R=182.38Mbps, L=1431B, K=100packets, T=64usec
+  PCT metric/stream[ 9] :: 0.30:0.29:0.33:0.38:0.50:0.38:0.38:0.25:0.11:
+  PDT metric/stream[ 9] :: -0.69:-0.68:-0.25:-0.33:-0.44:-0.80:-0.71:-0.42:-0.46:
+  PCT Trend/stream [ 9] :: NNNNUNNNN
+  PDT Trend/stream [ 9] :: NNNNNNNNN
+  Trend per stream [ 9] :: NNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 182.38-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=364.75Mbps, L=1431B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :16:29:33:36:35:34:36:35:35:29:32
+  # of DS @ rcvr        :: :82:63:57:56:55:57:53:57:59:61:62
+  Fleet Parameter(act)  :: R=307.16Mbps, L=1431B, K=100packets, T=38usec
+  PCT metric/stream[10] :: 0.29:0.38:0.25:0.57:0.25:0.14:0.14:0.43:0.29:0.43:
+  PDT metric/stream[10] :: -0.47:-0.13:-0.66:0.00:-0.75:-0.84:-0.50:-0.54:-0.33:-0.50:
+  PCT Trend/stream [10] :: NNNUNNNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 307.16-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 2
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 1
+  # of CS @ rcvr        :: :36:29:31:33:36:34:32:32:32:31:11
+  # of DS @ rcvr        :: :55:63:62:59:57:61:62:59:55:62:86
+  Fleet Parameter(act)  :: R=326.22Mbps, L=1440B, K=100packets, T=36usec
+  PCT metric/stream[ 9] :: 0.25:0.43:0.29:0.29:0.29:0.43:0.57:0.50:0.29:
+  PDT metric/stream[ 9] :: -0.45:-0.11:-0.40:-0.64:-0.12:-0.15:-0.38:-0.41:-0.41:
+  PCT Trend/stream [ 9] :: NNNNNNUUN
+  PDT Trend/stream [ 9] :: NNNNNNNNN
+  Trend per stream [ 9] :: NNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 326.22-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 326.22 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:03 2023 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:10 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 326.41Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=326.22Mbps, L=1440B, K=100packets, T=36usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0:38:41:39:41:41:42:40:44
+  # of DS @ rcvr        :: : 0: 0: 0:51:55:52:52:55:51:52:55
+  Fleet Parameter(act)  :: R=326.22Mbps, L=1440B, K=100packets, T=36usec
+  PCT metric/stream[12] :: 0.44:0.70:0.19:0.50:0.25:0.38:0.25:0.50:0.50:0.38:0.50:0.38:
+  PDT metric/stream[12] :: -0.12:-0.21:-0.53:-0.43:-0.50:-0.57:-0.91:-0.81:-0.60:-0.35:-0.90:-0.73:
+  PCT Trend/stream [12] :: NINUNNNUUNUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NUNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 326.22-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :34: 0: 0: 0: 0: 0: 0:37: 0: 0:35
+  # of DS @ rcvr        :: :60: 0: 0: 0: 0: 0: 0:58: 0: 0:60
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.43:0.38:0.44:0.47:0.39:0.35:0.53:0.29:0.27:0.31:0.29:0.29:
+  PDT metric/stream[12] :: -0.50:-0.27:0.01:0.01:-0.27:-0.27:0.01:-0.84:-0.59:-0.24:-0.59:-0.29:
+  PCT Trend/stream [12] :: NNNNNNUNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:58:11 2023 
+Measurement latency is 1.34 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:22 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 404.68Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25:25:13:18:18:15:16:16:19:20:17
+  # of DS @ rcvr        :: :34:53:39:27:29:28:32:29:41:37:34
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.33:0.25:0.44:0.33:0.33:0.33:0.22:0.33:0.44:0.22:0.44:0.44:
+  PDT metric/stream[12] :: 0.38:-0.80:-0.15:-0.65:-0.28:-0.79:-0.76:-0.66:-0.25:-0.78:-0.65:-0.55:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: UNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0:38: 0:40: 0: 0: 0:34:36
+  # of DS @ rcvr        :: : 0: 0: 0:55: 0:58: 0: 0: 0:60:61
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.35:0.31:0.64:0.38:0.40:0.43:0.38:0.38:0.36:0.43:0.29:0.30:
+  PDT metric/stream[12] :: -0.07:-0.37:0.07:-0.61:-0.38:-0.66:-0.20:-0.21:-0.43:-0.52:-0.88:0.04:
+  PCT Trend/stream [12] :: NNINNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNUNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:58:23 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:52 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 493.11Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :23:24:20:16:16:11:12: 0: 0:11:12
+  # of DS @ rcvr        :: :27:51:48:41:28:14:25: 0: 0:18:25
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.44:0.38:0.50:0.33:0.33:0.50:0.40:0.55:0.37:0.22:0.30:0.33:
+  PDT metric/stream[12] :: -0.19:-0.86:-0.12:-0.27:-0.15:0.10:-0.24:0.03:-0.04:-0.74:-0.63:-0.87:
+  PCT Trend/stream [12] :: NNUNNUNUNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0:40: 0:37:37:38: 0:37:38: 0
+  # of DS @ rcvr        :: : 0: 0:57: 0:57:57:58: 0:56:56: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.60:0.27:0.29:0.38:0.14:0.43:0.14:0.35:0.38:0.50:0.53:0.29:
+  PDT metric/stream[12] :: 0.16:-0.19:-0.65:-0.21:-0.89:-0.20:-0.70:-0.46:-0.94:-0.24:-0.16:-0.63:
+  PCT Trend/stream [12] :: UNNNNNNNNUUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:58:53 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:54 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 271.83Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=271.81Mbps, L=1433B, K=100packets, T=43usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :40: 0:41:37:40:39:42:37:40:43:41
+  # of DS @ rcvr        :: :50: 0:56:54:53:54:52:55:53:51:54
+  Fleet Parameter(act)  :: R=259.73Mbps, L=1433B, K=100packets, T=45usec
+  PCT metric/stream[12] :: 0.29:0.46:0.25:0.38:0.12:0.38:0.38:0.25:0.38:0.25:0.38:0.38:
+  PDT metric/stream[12] :: -0.25:-0.03:-0.93:-0.49:-0.95:-0.61:-0.87:-0.37:-0.46:-0.95:-0.80:-0.47:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 259.73-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33: 0: 0: 0: 0:30: 0:31:32: 0:30
+  # of DS @ rcvr        :: :59: 0: 0: 0: 0:61: 0:59:59: 0:61
+  Fleet Parameter(act)  :: R=326.22Mbps, L=1440B, K=100packets, T=36usec
+  PCT metric/stream[12] :: 0.43:0.45:0.60:0.44:0.33:0.57:0.50:0.29:0.14:0.38:0.29:0.54:
+  PDT metric/stream[12] :: -0.40:-0.30:-0.13:-0.23:-0.24:-0.23:-0.20:-0.61:-0.98:-0.06:-0.45:-0.10:
+  PCT Trend/stream [12] :: NNUNNUUNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 326.22-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 326.22 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:58:56 2023 
+Measurement latency is 1.33 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:58:57 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 353.26Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :22:28:12:18:16:14:14:20:14:19:17
+  # of DS @ rcvr        :: :23:34:34:27:38:21:29:29:39:30:51
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.44:0.44:0.44:0.22:0.40:0.44:0.33:0.22:0.33:0.25:0.33:
+  PDT metric/stream[12] :: -0.28:-0.25:-0.62:-0.70:-0.70:-0.29:-0.64:-0.24:-0.70:-0.69:-0.71:-0.53:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0:35:35: 0: 0
+  # of DS @ rcvr        :: : 0: 0: 0: 0: 0: 0: 0:60:60: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.44:0.41:0.50:0.47:0.47:0.44:0.38:0.29:0.29:0.31:0.40:0.53:
+  PDT metric/stream[12] :: -0.40:-0.05:-0.22:-0.31:-0.20:-0.31:-0.36:-0.65:-0.36:-0.12:-0.39:-0.36:
+  PCT Trend/stream [12] :: NNUNNNNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:58:59 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 01:59:00 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 349.82Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :25:22:16:18:15:13:15:14:12:18:18
+  # of DS @ rcvr        :: :26:40:32:28:39:27:32:27:28:36:55
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.40:0.33:0.44:0.44:0.22:0.11:0.44:0.22:0.22:0.33:0.12:0.12:
+  PDT metric/stream[12] :: 0.10:-0.65:-0.71:-0.29:-0.60:-0.95:-0.25:-0.78:-0.72:-0.18:-0.45:-0.42:
+  PCT Trend/stream [12] :: NNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0: 0: 0: 0:38:40:35:35:33:34:34
+  # of DS @ rcvr        :: : 0: 0: 0: 0:56:53:60:57:60:59:52
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.40:0.50:0.57:0.50:0.50:0.12:0.57:0.14:0.29:0.29:0.38:0.38:
+  PDT metric/stream[12] :: -0.25:-0.10:-0.06:-0.07:-0.03:-0.70:-0.48:-0.74:-0.10:-0.76:-0.46:-0.35:
+  PCT Trend/stream [12] :: NUUUUNUNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 317.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 01:59:01 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 02:00:07 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 16 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 32 usec
+  Max rate(max_pktsz/min_time) :: 367.00Mbps
+  ADR [.]                      :: 529.40Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :31:22:30:24:28:24:29:28:23:26:27
+  # of DS @ rcvr        :: :32:45:39:31:34:38:40:33:56:42:43
+  Fleet Parameter(act)  :: R=183.50Mbps, L=1440B, K=100packets, T=64usec
+  PCT metric/stream[12] :: 0.44:0.50:0.44:0.44:0.33:0.22:0.11:0.33:0.25:0.44:0.50:0.33:
+  PDT metric/stream[12] :: 0.41:-0.74:-0.24:-0.44:-0.81:-0.42:-0.49:-0.59:-0.79:-0.54:-0.68:-0.46:
+  PCT Trend/stream [12] :: NUNNNNNNNNUN
+  PDT Trend/stream [12] :: UNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 183.50-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=367.00Mbps, L=1440B, K=100packets, T=32usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: : 0:27:29:32:31:34:27: 0:38:29:34
+  # of DS @ rcvr        :: : 0:61:60:57:56:60:59: 0:53:61:60
+  Fleet Parameter(act)  :: R=317.41Mbps, L=1440B, K=100packets, T=37usec
+  PCT metric/stream[12] :: 0.54:0.29:0.57:0.43:0.25:0.43:0.43:0.53:0.50:0.43:0.43:0.44:
+  PDT metric/stream[12] :: -0.26:-0.53:0.10:-0.56:0.22:-0.46:-0.55:-0.04:-0.05:-0.47:-0.39:0.06:
+  PCT Trend/stream [12] :: UNUNNNNUUNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 317.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 317.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 02:00:09 2023 
+Measurement latency is 1.44 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 02:00:16 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 461.84Mbps
+  Grey bandwidth resolution    :: 12.00
+  Interrupt coalescion detected
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :28:21:19:18:11:16: 7:14:15:13:13
+  # of DS @ rcvr        :: :31:54:31:35:19:28:17:23:41:24:21
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[12] :: 0.44:0.38:0.33:0.38:0.50:0.33:0.40:0.30:0.22:0.30:0.20:0.50:
+  PDT metric/stream[12] :: -0.03:-0.71:-0.60:-0.56:0.08:-0.25:0.07:-0.05:-0.73:-0.58:-0.65:-0.05:
+  PCT Trend/stream [12] :: NNNNUNNNNNNU
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :41: 0:34: 0:33: 0: 0: 0: 0: 0: 0
+  # of DS @ rcvr        :: :57: 0:60: 0:60: 0: 0: 0: 0: 0: 0
+  Fleet Parameter(act)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  PCT metric/stream[12] :: 0.43:0.50:0.14:0.53:0.29:0.50:0.38:0.29:0.44:0.40:0.36:0.42:
+  PDT metric/stream[12] :: 0.04:0.04:-0.99:-0.05:-0.39:-0.16:-0.02:-0.21:-0.19:0.01:-0.21:-0.15:
+  PCT Trend/stream [12] :: NUNUNUNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 345.41-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Available bandwidth range : 345.41 - 0.00 (Mbps)
+Measurements finished at Tue May 30 02:00:17 2023 
+Measurement latency is 1.49 sec 
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 15:11:18 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 352.82Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :17:19:22:17:13:16:15:18:19:18:13
+  # of DS @ rcvr        :: :19:70:33:51:24:82:34:36:34:39:35
+  Fleet Parameter(act)  :: R=172.71Mbps, L=1440B, K=100packets, T=68usec
+  PCT metric/stream[ 9] :: 0.40:0.44:0.12:0.30:0.22:0.44:0.11:0.44:0.25:
+  PDT metric/stream[ 9] :: -0.16:-0.28:-0.92:-0.07:-0.16:-0.48:-0.66:-0.32:-0.35:
+  PCT Trend/stream [ 9] :: NNNNNNNNN
+  PDT Trend/stream [ 9] :: NNNNNNNNN
+  Trend per stream [ 9] :: NNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 172.71-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :30:29:32:34:31:34:34:32:36:33:33
+  # of DS @ rcvr        :: :61:61:57:58:55:56:57:57:54:57:57
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[12] :: 0.57:0.43:0.43:0.29:0.38:0.25:0.29:0.14:0.25:0.29:0.29:0.38:
+  PDT metric/stream[12] :: -0.59:-0.28:-0.50:-0.60:-0.40:-0.23:-0.51:-0.57:-0.78:-0.82:-0.47:-0.37:
+  PCT Trend/stream [12] :: UNNNNNNNNNNN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 293.60-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 293.60 (Mbps)
+
+
+
+
+Receiver OptiPlex-7000 starts measurements at sender 2001:2f8:1c1:816::c3d7 on Tue May 30 15:11:24 2023 
+  Maximum packet size          :: 1440 bytes
+  send latency @sndr           :: 17 usec
+  recv latency @rcvr           :: 1 usec
+  Minimum packet spacing       :: 34 usec
+  Max rate(max_pktsz/min_time) :: 345.41Mbps
+  ADR [.]                      :: 283.20Mbps
+  Grey bandwidth resolution    :: 12.00
+
+Receiving Fleet 0
+  Fleet Parameter(req)  :: R=283.12Mbps, L=1423B, K=100packets, T=41usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :39:29:40:16:37:37:38:39:41:36:40
+  # of DS @ rcvr        :: :52:63:51:83:52:52:50:54:50:53:53
+  Fleet Parameter(act)  :: R=246.98Mbps, L=1423B, K=100packets, T=47usec
+  PCT metric/stream[10] :: 0.50:0.25:0.50:0.38:0.43:0.38:0.29:0.38:0.38:0.38:
+  PDT metric/stream[10] :: 0.12:-0.47:-0.33:-0.64:-0.45:-0.15:-0.89:-0.28:-0.54:-0.72:
+  PCT Trend/stream [10] :: UNUNNNNNNN
+  PDT Trend/stream [10] :: NNNNNNNNNN
+  Trend per stream [10] :: NNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 246.98-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+Receiving Fleet 1
+  Fleet Parameter(req)  :: R=345.41Mbps, L=1440B, K=100packets, T=34usec
+  Lossrate per stream   :: :0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0:0.0
+  # of CS @ sndr        :: : 0: 0: 0: 0: 0: 0: 0: 0: 0: 0: 0
+  # of CS @ rcvr        :: :33:26:30:31:32:31:34:31:34:34:38
+  # of DS @ rcvr        :: :49:62:57:62:57:58:58:59:56:51:53
+  Fleet Parameter(act)  :: R=293.60Mbps, L=1440B, K=100packets, T=40usec
+  PCT metric/stream[12] :: 0.25:0.43:0.29:0.43:0.29:0.29:0.43:0.29:0.50:0.38:0.50:0.38:
+  PDT metric/stream[12] :: -0.30:-0.48:-0.54:-0.64:-0.24:-0.30:-0.52:-0.42:-0.41:0.00:-0.86:-0.21:
+  PCT Trend/stream [12] :: NNNNNNNNUNUN
+  PDT Trend/stream [12] :: NNNNNNNNNNNN
+  Trend per stream [12] :: NNNNNNNNNNNN
+  Aggregate trend       :: NO TREND
+  Rmin-Rmax             :: 293.60-0.00Mbps
+  Gmin-Gmax             :: 0.00-0.00Mbps
+
+	*****  RESULT *****
+Avail-bw > maximum sending rate.
+Avail-bw > 293.60 (Mbps)

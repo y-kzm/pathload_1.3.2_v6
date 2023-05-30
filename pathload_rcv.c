@@ -39,7 +39,7 @@ int main(l_int32 argc, char *argv[])
 {
   extern char *optarg;
   struct hostent *host_snd;
-  //struct sockaddr_in snd_tcp_addr, rcv_udp_addr;
+  // struct sockaddr_in snd_tcp_addr, rcv_udp_addr;
   struct utsname uts ;
   l_int32 ctr_code;
   l_int32 trend, prev_trend = 0;
@@ -59,10 +59,16 @@ int main(l_int32 argc, char *argv[])
   interrupt_coalescence=0;
   bad_fleet_cs=0;
   num_stream = NUM_STREAM;
+  cmd_num_stream = NUM_STREAM;
   stream_len = STREAM_LEN ;
+  cmd_stream_len = STREAM_LEN ;
+  cmd_train_len = TRAIN_LEN ;
   exp_flag = 1;
   num=0;
-  snd_time_interval=0; 
+  snd_time_interval=0;
+  cmd_max_fleets = 0;
+  overhead = 0;
+  cmd_max_overhead = 0;
 
   converged_gmx_rmx = 0 ;
   converged_gmn_rmn = 0 ;
@@ -78,6 +84,7 @@ int main(l_int32 argc, char *argv[])
   netlog=0;
   increase_stream_len=0;
   lower_bound=0;
+
   /* Additional var for support IPv6 */
   struct sockaddr_storage snd_tcp_addr, rcv_udp_addr;
   struct addrinfo hints, *res, *res0;
@@ -90,9 +97,8 @@ int main(l_int32 argc, char *argv[])
   socklen_t snd_tcp_addr_len = sizeof(snd_tcp_addr);
   int v6mode = 0;
 
-  // TODO: -B: bind to the interface associated with the address <host>
   if ( argc == 1 ) errflg++ ;
-  while ((c = getopt(argc, argv, "6t:s:hw:vHqo:O:N:V")) != EOF)
+  while ((c = getopt(argc, argv, "6t:s:hw:k:n:f:b:vHqo:O:N:V")) != EOF)
     switch (c) 
     {
       case '6':
@@ -107,6 +113,20 @@ int main(l_int32 argc, char *argv[])
         break;
       case 'w':
         bw_resol = atof(optarg);
+        break;
+      case 'k':
+        cmd_stream_len = atoi(optarg);
+	cmd_train_len = cmd_stream_len * TRAIN_LEN / STREAM_LEN ;
+        break;
+      case 'n':
+        cmd_num_stream = atoi(optarg);
+	num_stream = cmd_num_stream;
+        break;
+      case 'f':
+        cmd_max_fleets = atoi(optarg);
+        break;
+      case 'b':
+        cmd_max_overhead = atoi(optarg);
         break;
       case 'q':
         Verbose=0;
@@ -143,7 +163,7 @@ int main(l_int32 argc, char *argv[])
   if (errflg)
   {
     fprintf(stderr, "usage: pathload_rcv [-q|-v] [-o <filename>] [-N <filename>]\
-[-w <bw_resol>] [-h|-H] [-6] -s <sender>\n");
+[-w <bw_resol>] [-h|-H] -s <sender>\n");
     exit (0);
   }
 
@@ -206,40 +226,7 @@ int main(l_int32 argc, char *argv[])
     perror("ERROR :: failed to bind DGRAM socket:");
     exit(-1);
   }
-  
-  // TODO: Deals with multiple sockets
-  /*
-  for (res = res0; res; res = res->ai_next)
-  {
-    error = getnameinfo(res->ai_addr, res->ai_addrlen,
-                        hbuf, sizeof(hbuf), sbuf, sizeof(sbuf),
-                        NI_NUMERICHOST | NI_NUMERICSERV);
-    if (error)
-    {
-        fprintf(stderr, "%s %s: %s\n", hbuf, sbuf, gai_strerror(error));
-        continue;
-    }
-    fprintf(stderr, "Listen to %s port %s\n", hbuf, sbuf);
 
-    sock_udp = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
-    if (sock_udp < 0)
-    {
-        continue;
-    }
-    if (res->ai_family == AF_INET6 &&
-        setsockopt(sock_udp, IPPROTO_IPV6, IPV6_V6ONLY, &on, sizeof(on)) < 0)
-    {
-      perror("setsockopt");
-      continue;
-    }
-    if (bind(sock_udp, res->ai_addr, res->ai_addrlen) < 0)
-    {
-      perror("ERROR :: failed to bind DGRAM socket:");
-      continue;
-    }
-  }
-  */
-  
   freeaddrinfo(res0);
   getsockname(sock_udp, (struct sockaddr *)&rcv_udp_addr, &rcv_udp_addr_len);
 
@@ -261,6 +248,8 @@ int main(l_int32 argc, char *argv[])
     exit(-1);
   }
   
+
+
 
   /* Create TCP socket to control stream */
   snprintf(sbuf, sizeof(sbuf), "%u", TCPSND_PORT);
@@ -328,6 +317,8 @@ int main(l_int32 argc, char *argv[])
     perror("fcntl:");
     exit(-1);
   }
+
+
   /*
     measure max_pkt_sz (based on TCP MSS).
     this is not accurate because it does not take into
@@ -463,13 +454,15 @@ int main(l_int32 argc, char *argv[])
     send_ctr_mesg(ctr_buff, transmission_rate);
     send_ctr_mesg(ctr_buff,cur_pkt_sz) ;
     if ( increase_stream_len )
-      stream_len=3*STREAM_LEN;
+      stream_len=3*cmd_stream_len;
     else
-      stream_len = STREAM_LEN;
+      stream_len = cmd_stream_len;
     send_ctr_mesg(ctr_buff,stream_len);
+    send_ctr_mesg(ctr_buff,num_stream);
     send_ctr_mesg(ctr_buff,time_interval);
     ctr_code = SEND_FLEET | CTR_CODE ;
     send_ctr_mesg(ctr_buff, ctr_code);
+    overhead += cur_pkt_sz * stream_len * num_stream;
 
     while (1)
     {
@@ -493,12 +486,20 @@ int main(l_int32 argc, char *argv[])
         if (rate_adjustment(INCREASING) == -1)
           terminate_gracefully(exp_start_time);
       }
+      if ( (cmd_max_fleets != 0) && (exp_fleet_id > cmd_max_fleets) )
+        terminate_gracefully(exp_start_time) ;	
+      if ( (cmd_max_overhead != 0) && (overhead > cmd_max_overhead) )
+        terminate_gracefully(exp_start_time) ;	
     }
     else
     {
       get_sending_rate() ;
       trend = aggregate_trend_result();
-      
+
+      if ( (cmd_max_fleets != 0) && (exp_fleet_id > cmd_max_fleets) )
+        terminate_gracefully(exp_start_time) ;	
+      if ( (cmd_max_overhead != 0) && (overhead > cmd_max_overhead) )
+        terminate_gracefully(exp_start_time) ;	
       if ( trend == -1 && bad_fleet_cs && retry_fleet_cnt_cs >NUM_RETRY_CS )
         terminate_gracefully(exp_start_time) ;
       else if(( trend == -1 && bad_fleet_cs && retry_fleet_cnt_cs <= NUM_RETRY_CS )) /* repeat fleet with current rate. */

@@ -17,36 +17,37 @@
 */
 
 /*-------------------------------------------------
-   pathload : an end-to-end available bandwidth
+   pathload : an end-to-end available bandwidth 
               estimation tool
    Author   : Manish Jain (jain@cc.gatech.edu)
               Constantinos Dovrolis (dovrolis@cc.gatech.edu)
    Release  : Ver 1.3.2
    Support  : This work was supported by the SciDAC
-              program of the US department
+              program of the US department 
 --------------------------------------------------*/
 #define LOCAL
 #define MAX_SOCK 20
 #include "pathload_gbls.h"
 #include "pathload_snd.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char* argv[])
 {
   struct hostent *host_rcv;
-  struct timeval tv1, tv2;
-  l_uint32 snd_time;
-  l_int32 ctr_code;
+  struct timeval tv1,tv2;
+  l_uint32 snd_time ;
+  l_int32 ctr_code ;
   time_t localtm;
-  int opt_len, mss;
-  int ret_val;
-  int iterate = 0;
-  int done = 0;
-  int latency[30], ord_latency[30];
+  int opt_len,mss;
+  int ret_val ;
+  int iterate=0;
+  int done=0;
+  int latency[30],ord_latency[30];
   int i;
-  int c;
-  int errflg = 0;
+  int c ;
+  int errflg=0;
   char pkt_buf[256];
   char ctr_buff[8];
+
   /* Additional var for IPv6 suppport */
   struct addrinfo hints, *res, *res0;
   int error;
@@ -61,22 +62,22 @@ int main(int argc, char *argv[])
   char hbuf[NI_MAXHOST], sbuf[NI_MAXSERV];
   const int on = 1;
 
-  quiet = 0;
+  quiet=0;
   while ((c = getopt(argc, argv, "ihHq")) != EOF)
-    switch (c)
+    switch (c) 
     {
-    case 'H':
-    case 'h':
-      help();
-      break;
-    case 'i':
-      iterate = 1;
-      break;
-    case 'q':
-      quiet = 1;
-      break;
-    case '?':
-      errflg++;
+      case 'H':
+      case 'h':
+        help() ;
+        break ;
+      case 'i':
+        iterate=1;
+        break;
+      case 'q':
+        quiet=1;
+        break;
+      case '?':
+        errflg++;
     }
   if (errflg)
   {
@@ -84,10 +85,24 @@ int main(int argc, char *argv[])
     exit(-1);
   }
 
-  num_stream = NUM_STREAM;
+  num_stream = NUM_STREAM ;
   min_sleeptime();
 
   /* gettimeofday latency */
+  for(i=0;i<30;i++)
+  {
+    gettimeofday(&tv1,NULL);
+    gettimeofday(&tv2,NULL);
+    latency[i]=tv2.tv_sec*1000000+tv2.tv_usec-tv1.tv_sec*1000000-tv1.tv_usec;
+  }
+  order_int(latency,ord_latency,30);
+  gettimeofday_latency = ord_latency[15];  
+#ifdef DEBUG
+  printf("DEBUG :: gettimeofday_latency = %d\n",gettimeofday_latency);
+#endif
+
+
+/* gettimeofday latency */
   for (i = 0; i < 30; i++)
   {
     gettimeofday(&tv1, NULL);
@@ -271,71 +286,70 @@ int main(int argc, char *argv[])
             snd_max_pkt_sz = mss + 12;
 
           /* tell receiver our max packet sz */
-          send_ctr_mesg(ctr_buff, snd_max_pkt_sz);
+          send_ctr_mesg(ctr_buff, snd_max_pkt_sz) ;
           /* receiver's maxp packet size */
-          while ((rcv_max_pkt_sz = recv_ctr_mesg(ctr_buff)) == -1)
-            ;
-          max_pkt_sz = (rcv_max_pkt_sz < snd_max_pkt_sz) ? rcv_max_pkt_sz : snd_max_pkt_sz;
-          if (!quiet)
-            printf("Maximum packet size          :: %ld bytes\n", max_pkt_sz);
+          while ((rcv_max_pkt_sz = recv_ctr_mesg( ctr_buff)) == -1);
+          max_pkt_sz = (rcv_max_pkt_sz < snd_max_pkt_sz) ? rcv_max_pkt_sz:snd_max_pkt_sz ;
+          if ( !quiet )
+            printf("Maximum packet size          :: %ld bytes\n",max_pkt_sz);
           /* tell receiver our send latency */
-          snd_time = (l_int32)send_latency();
-          send_ctr_mesg(ctr_buff, snd_time);
+          snd_time = (l_int32) send_latency();
+          send_ctr_mesg(ctr_buff, snd_time) ;
 
           /* wait for receiver to start ADR measurement */
-          if ((ret_val = recv_ctr_mesg(ctr_buff)) == -1)
-            break;
-          if ((((ret_val & CTR_CODE) >> 31) == 1) && ((ret_val & 0x7fffffff) == SEND_TRAIN))
+          if ((cmd_train_len = recv_ctr_mesg( ctr_buff))  <= 0 )break;
+          if ( !quiet )
+            printf("ADR train length             :: %ld packets\n",cmd_train_len);
+          if ( (cmd_train_len < 10) || (cmd_train_len > TRAIN_LEN) )
+            cmd_train_len = TRAIN_LEN;
+          if((ret_val=recv_ctr_mesg(ctr_buff)) == -1 )break;
+          if ( (((ret_val & CTR_CODE) >> 31) == 1) && ((ret_val & 0x7fffffff) == SEND_TRAIN ) ) 
           {
-            if (!quiet)
+            if ( !quiet)
               printf("Estimating ADR to initialize rate adjustment algorithm => ");
             fflush(stdout);
-            if (send_train() == -1)
-              continue;
-            if (!quiet)
+            if ( send_train() == -1 )
+            {
+        close(ctr_strm);
+        continue ;
+            }
+            if ( !quiet)
               printf("Done\n");
           }
-          fleet_id = 0;
-          done = 0;
+          fleet_id=0;
+          done=0;
           /* Start avail-bw measurement */
-          while (!done)
+          while(!done)
           {
-            if ((ret_val = recv_ctr_mesg(ctr_buff)) == -1)
-              break;
-            if ((((ret_val & CTR_CODE) >> 31) == 1) && ((ret_val & 0x7fffffff) == TERMINATE))
+            if (( ret_val  = recv_ctr_mesg ( ctr_buff ) ) == -1 ) break ;
+            if((((ret_val & CTR_CODE) >> 31) == 1) &&((ret_val&0x7fffffff) == TERMINATE)) 
             {
-              if (!quiet)
+              if ( !quiet)
                 printf("Terminating current run.\n");
-              done = 1;
+              done=1;
             }
             else
             {
-              transmission_rate = ret_val;
-              if ((cur_pkt_sz = recv_ctr_mesg(ctr_buff)) <= 0)
-                break;
-              if ((stream_len = recv_ctr_mesg(ctr_buff)) <= 0)
-                break;
-              if ((time_interval = recv_ctr_mesg(ctr_buff)) <= 0)
-                break;
-              if ((ret_val = recv_ctr_mesg(ctr_buff)) == -1)
-                break;
+              transmission_rate = ret_val ;
+              if ((cur_pkt_sz = recv_ctr_mesg( ctr_buff)) <= 0 )break;
+              if ((stream_len = recv_ctr_mesg( ctr_buff))  <= 0 )break;
+              if ((num_stream = recv_ctr_mesg( ctr_buff))  <= 0 )break;
+              if ((time_interval = recv_ctr_mesg( ctr_buff)) <= 0 )break;
+              if ((ret_val = recv_ctr_mesg ( ctr_buff )) == -1 )break;
               /* ret_val = SENd_FLEET */
-              ctr_code = RECV_FLEET | CTR_CODE;
-              if (send_ctr_mesg(ctr_buff, ctr_code) == -1)
-                break;
-              if (send_fleet() == -1)
-                break;
-              if (!quiet)
-                printf("\n");
-              fleet_id++;
+              ctr_code = RECV_FLEET | CTR_CODE ;
+              if ( send_ctr_mesg(ctr_buff,  ctr_code  ) == -1 ) break;
+              if(send_fleet()==-1) break ;
+              if ( !quiet) printf("\n");
+              fleet_id++ ;
             }
           }
           close(ctr_strm);
         }
-        freeaddrinfo(res0);
       }
     }
   } while (iterate);
-
+  
   return 0;
 }
+

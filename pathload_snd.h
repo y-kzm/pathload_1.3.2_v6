@@ -46,8 +46,7 @@ EXTERN double time_to_us_delta(struct timeval tv1, struct timeval tv2);
 EXTERN l_int32 fleet_id_n ;
 EXTERN l_int32 fleet_id  ;
 EXTERN int sock_udp, sock_tcp, ctr_strm, send_buff_sz, rcv_tcp_adrlen;
-// EXTERN struct sockaddr_in snd_udp_addr, snd_tcp_addr, rcv_udp_addr, rcv_tcp_addr;  // TODO: IPv6
-EXTERN struct sockaddr_storage snd_udp_addr, snd_tcp_addr, rcv_udp_addr, rcv_tcp_addr;  // TODO: IPv6
+EXTERN struct sockaddr_in snd_udp_addr, snd_tcp_addr, rcv_udp_addr, rcv_tcp_addr;
 EXTERN l_int32 min_sleep_interval ; /* in usec */
 EXTERN l_int32 min_timer_intr ; /* in usec */
 EXTERN int gettimeofday_latency ;
